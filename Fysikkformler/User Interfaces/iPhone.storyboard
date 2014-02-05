@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="wN4-hw-eoj">
             <objects>
-                <viewController id="74V-sy-I3Z" sceneMemberID="viewController">
+                <viewController id="74V-sy-I3Z" customClass="StartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ch3-dX-kIX"/>
                         <viewControllerLayoutGuide type="bottom" id="m94-DJ-WSR"/>
@@ -15,13 +15,134 @@
                     <view key="view" contentMode="scaleToFill" id="NZo-hH-WKp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="atomcloud-grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="eic-nt-sxO">
+                                <rect key="frame" x="78" y="66" width="164" height="164"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="doh-ej-hh8"/>
+                    <connections>
+                        <segue destination="kgw-ll-g7e" kind="push" identifier="InfoViewSegue" id="Yk0-re-wPF"/>
+                        <segue destination="2Am-qV-a99" kind="push" identifier="FormelSegue" id="rUl-ac-9jV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwh-oI-EfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="-7"/>
+            <point key="canvasLocation" x="471" y="-7"/>
+        </scene>
+        <!--Info View View Controller-->
+        <scene sceneID="ynw-px-Xcf">
+            <objects>
+                <viewController storyboardIdentifier="InfoView" id="kgw-ll-g7e" customClass="InfoViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pdq-fv-rcY"/>
+                        <viewControllerLayoutGuide type="bottom" id="yKd-HF-Fft"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bre-JF-s53">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="omn-oU-0c8">
+                                <rect key="frame" x="20" y="179" width="280" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Fysikkformel er en app laget av Oscar Apeland og Ole Bastian Sandok for bruk til Fysikk 1 og 2 på VGS-nivå. Vi tar forbehold for feil i applikasjonen. Hvis du ser en feil eller har en god idé, send en mail til oscar.apeland@icloud.com.  </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versjon 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoU-z7-xti">
+                                <rect key="frame" x="118" y="534" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="VPi-LA-qXM"/>
+                                    <constraint firstAttribute="height" constant="21" id="oZH-d0-EG3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Velg hva du vil løse for" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJE-BD-gJt">
+                                <rect key="frame" x="20" y="80" width="280" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="eXG-Iq-Uq7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Tap for å snu til utgangsformlen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqS-hC-to9">
+                                <rect key="frame" x="20" y="113" width="280" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="F6x-MZ-7J1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Hold inne for å løse for komponenter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-Be-qct">
+                                <rect key="frame" x="20" y="146" width="280" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="FZO-o4-yxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atomcloud-grey.png" translatesAutoresizingMaskIntoConstraints="NO" id="ujv-LL-TYu">
+                                <rect key="frame" x="110" y="426" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3j1-HQ-tLr"/>
+                                    <constraint firstAttribute="width" constant="100" id="rqt-0U-jhm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="omn-oU-0c8" firstAttribute="trailing" secondItem="F8F-Be-qct" secondAttribute="trailing" id="6x7-tj-UMO"/>
+                            <constraint firstItem="SJE-BD-gJt" firstAttribute="top" secondItem="pdq-fv-rcY" secondAttribute="bottom" constant="16" id="94q-6l-aeU"/>
+                            <constraint firstItem="pqS-hC-to9" firstAttribute="trailing" secondItem="SJE-BD-gJt" secondAttribute="trailing" id="A8T-VZ-Dn5"/>
+                            <constraint firstItem="F8F-Be-qct" firstAttribute="leading" secondItem="pqS-hC-to9" secondAttribute="leading" id="FqZ-WV-ghd"/>
+                            <constraint firstItem="pqS-hC-to9" firstAttribute="top" secondItem="SJE-BD-gJt" secondAttribute="bottom" constant="8" symbolic="YES" id="JMN-Lv-DBS"/>
+                            <constraint firstItem="XoU-z7-xti" firstAttribute="top" secondItem="ujv-LL-TYu" secondAttribute="bottom" constant="8" symbolic="YES" id="Ktd-Vp-dgI"/>
+                            <constraint firstItem="omn-oU-0c8" firstAttribute="top" secondItem="F8F-Be-qct" secondAttribute="bottom" constant="8" symbolic="YES" id="YMa-f8-QgK"/>
+                            <constraint firstItem="yKd-HF-Fft" firstAttribute="top" secondItem="XoU-z7-xti" secondAttribute="bottom" constant="13" id="gG1-r3-F6v"/>
+                            <constraint firstItem="ujv-LL-TYu" firstAttribute="centerX" secondItem="XoU-z7-xti" secondAttribute="centerX" id="hgg-2j-hw1"/>
+                            <constraint firstItem="F8F-Be-qct" firstAttribute="top" secondItem="pqS-hC-to9" secondAttribute="bottom" constant="8" symbolic="YES" id="l5q-NR-Tmc"/>
+                            <constraint firstItem="omn-oU-0c8" firstAttribute="centerX" secondItem="ujv-LL-TYu" secondAttribute="centerX" id="m6v-s7-zQT"/>
+                            <constraint firstItem="SJE-BD-gJt" firstAttribute="leading" secondItem="bre-JF-s53" secondAttribute="leading" constant="20" symbolic="YES" id="m8f-rW-oEV"/>
+                            <constraint firstItem="SJE-BD-gJt" firstAttribute="leading" secondItem="pqS-hC-to9" secondAttribute="leading" id="qQ8-CL-03k"/>
+                            <constraint firstItem="ujv-LL-TYu" firstAttribute="top" secondItem="omn-oU-0c8" secondAttribute="bottom" constant="8" symbolic="YES" id="rbs-v7-kvG"/>
+                            <constraint firstItem="F8F-Be-qct" firstAttribute="trailing" secondItem="pqS-hC-to9" secondAttribute="trailing" id="wl9-Ou-Fzj"/>
+                            <constraint firstItem="omn-oU-0c8" firstAttribute="leading" secondItem="F8F-Be-qct" secondAttribute="leading" id="zJz-Dq-By0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="770-h7-Eaw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3Y-yp-0Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="689"/>
+        </scene>
+        <!--Formel View Controller-->
+        <scene sceneID="3AW-OY-jwI">
+            <objects>
+                <viewController storyboardIdentifier="FormelView" id="2Am-qV-a99" customClass="FormelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="58n-ll-fXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="wnd-ee-Fpr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CAn-CB-vw6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ie-Xo-OEl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEf-Qf-iQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QZU-ch-JnX">
@@ -42,6 +163,9 @@
             <point key="canvasLocation" x="-31" y="-7"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="atomcloud-grey.png" width="2048" height="2048"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

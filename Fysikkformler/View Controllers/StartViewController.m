@@ -11,7 +11,7 @@
 #import "InfoViewViewController.h"
 @interface StartViewController () <UIScrollViewDelegate>
 
-@property (strong) NSDictionary *allTypes; //Array over alle typene enheter
+@property (strong) NSDictionary *allTypes;
 
 @end
 
@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //Initer alle enhetene
+
     self.navigationItem.title = @"Velg enhet";
     self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -81,38 +81,15 @@
         [unitControl addSubview:unitLabel];
         [unitControl addTarget:self action:@selector(unitTouchedUpInside:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:unitControl];
-        
-        /*
-        if (i%2) {
-            [unitControl setFrame:CGRectMake((float)self.view.frame.size.width/2+0.5f, i/2*80+i/2, self.view.frame.size.width/2-1, 80)];
-        }
-        else {
-            [unitControl setFrame:CGRectMake(1, i/2*80+i/2, (float)self.view.frame.size.width/2-1, 80)];
-        }
-        
-        UILabel *unitLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,-5, 160, 70)];
-        unitLabel.font = [UIFont fontWithName:THIN size:70.0f];
-        unitLabel.textColor = [UIColor colorWithWhite:0.7f alpha:1];
-        unitLabel.textAlignment = NSTextAlignmentCenter;
-        unitLabel.text = [sortedKeys objectAtIndex:i];
-
-        UILabel *unitTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 55, 160, 25)];
-        unitTextLabel.font = [UIFont fontWithName:LIGHT size:20.0f];
-        unitTextLabel.text = [self.allTypes objectForKey:unitLabel.text];
-        unitTextLabel.textAlignment = NSTextAlignmentCenter;
-        unitTextLabel.backgroundColor = [UIColor clearColor];
-        
-        [unitControl setBackgroundColor:[UIColor colorWithWhite:0.98f alpha:1]];
-        [unitControl addSubview:unitTextLabel];
-        [unitControl addSubview:unitLabel];
-        [unitControl addTarget:self action:@selector(unitTouchedUpInside:) forControlEvents:UIControlEventTouchUpInside];
-        [scrollView addSubview:unitControl];*/
 
     }
+    
     UIView *whiteBackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, scrollView.contentSize.width, scrollView.contentSize.height)];
     whiteBackView.backgroundColor = [UIColor whiteColor];
+    
     [scrollView addSubview:whiteBackView];
     [scrollView sendSubviewToBack:whiteBackView];
+    
     [self.view addSubview:scrollView];
     [self.view bringSubviewToFront:scrollView];
    
@@ -129,9 +106,11 @@
     UIControl *touchedControl = (UIControl*)sender;
     
     NSString *unitString = [(UILabel*)[touchedControl.subviews objectAtIndex:1] text];
+    
     FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
     formelView.currentUnit = unitString;
     formelView.allTypes = self.allTypes;
+    
     [self.navigationController pushViewController:formelView animated:YES];
     
 }
