@@ -10,17 +10,113 @@
 		08FA780B18A28E4800097C6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780A18A28E4800097C6E /* Foundation.framework */; };
 		08FA780D18A28E4800097C6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780C18A28E4800097C6E /* CoreGraphics.framework */; };
 		08FA780F18A28E4800097C6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780E18A28E4800097C6E /* UIKit.framework */; };
-		08FA781518A28E4800097C6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FA781318A28E4800097C6E /* InfoPlist.strings */; };
-		08FA781718A28E4800097C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA781618A28E4800097C6E /* main.m */; };
-		08FA781B18A28E4900097C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA781A18A28E4900097C6E /* AppDelegate.m */; };
-		08FA781E18A28E4900097C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FA781C18A28E4900097C6E /* Main.storyboard */; };
-		08FA782118A28E4900097C6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA782018A28E4900097C6E /* ViewController.m */; };
-		08FA782318A28E4900097C6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FA782218A28E4900097C6E /* Images.xcassets */; };
 		08FA782A18A28E4900097C6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA782918A28E4900097C6E /* XCTest.framework */; };
 		08FA782B18A28E4900097C6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780A18A28E4800097C6E /* Foundation.framework */; };
 		08FA782C18A28E4900097C6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780E18A28E4800097C6E /* UIKit.framework */; };
 		08FA783418A28E4900097C6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FA783218A28E4900097C6E /* InfoPlist.strings */; };
 		08FA783618A28E4900097C6E /* FysikkformlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA783518A28E4900097C6E /* FysikkformlerTests.m */; };
+		08FA784418A28F6C00097C6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA784318A28F6C00097C6E /* QuartzCore.framework */; };
+		08FA784C18A28FC300097C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA784718A28FC300097C6E /* AppDelegate.m */; };
+		08FA784E18A28FC300097C6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FA784A18A28FC300097C6E /* InfoPlist.strings */; };
+		08FA784F18A28FC300097C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA784B18A28FC300097C6E /* main.m */; };
+		08FA785118A291D200097C6E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785018A291D200097C6E /* Default-568h@2x.png */; };
+		08FA78D518A2938400097C6E /* Formel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA785418A2938300097C6E /* Formel.m */; };
+		08FA78D618A2938400097C6E /* FormelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785618A2938300097C6E /* FormelCell.xib */; };
+		08FA78D718A2938400097C6E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785718A2938300097C6E /* iPhone.storyboard */; };
+		08FA78D818A2938400097C6E /* FormelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA785A18A2938300097C6E /* FormelCell.m */; };
+		08FA78D918A2938400097C6E /* FormelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA785C18A2938300097C6E /* FormelViewController.m */; };
+		08FA78DA18A2938400097C6E /* InfoViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA785E18A2938300097C6E /* InfoViewViewController.m */; };
+		08FA78DB18A2938400097C6E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786018A2938300097C6E /* StartViewController.m */; };
+		08FA78DC18A2938400097C6E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 08FA786318A2938300097C6E /* LICENSE.txt */; };
+		08FA78DD18A2938400097C6E /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786518A2938300097C6E /* NSData+MD5.m */; };
+		08FA78DE18A2938400097C6E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786718A2938300097C6E /* NSString+MD5.m */; };
+		08FA78DF18A2938400097C6E /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786918A2938300097C6E /* PDFView.m */; };
+		08FA78E018A2938400097C6E /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786B18A2938300097C6E /* UIImage+PDF.m */; };
+		08FA78E118A2938400097C6E /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786D18A2938300097C6E /* UIView+Image.m */; };
+		08FA78E218A2938400097C6E /* finito.json in Resources */ = {isa = PBXBuildFile; fileRef = 08FA786F18A2938300097C6E /* finito.json */; };
+		08FA78E318A2938400097C6E /* a1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787218A2938300097C6E /* a1.pdf */; };
+		08FA78E418A2938400097C6E /* a1snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787318A2938300097C6E /* a1snudd.pdf */; };
+		08FA78E518A2938400097C6E /* a2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787418A2938300097C6E /* a2.pdf */; };
+		08FA78E618A2938400097C6E /* a2snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787518A2938300097C6E /* a2snudd.pdf */; };
+		08FA78E718A2938400097C6E /* a3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787618A2938300097C6E /* a3.pdf */; };
+		08FA78E818A2938400097C6E /* a3snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787718A2938300097C6E /* a3snudd.pdf */; };
+		08FA78E918A2938400097C6E /* a4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787818A2938300097C6E /* a4.pdf */; };
+		08FA78EA18A2938400097C6E /* a4snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787918A2938300097C6E /* a4snudd.pdf */; };
+		08FA78EB18A2938400097C6E /* a5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787A18A2938300097C6E /* a5.pdf */; };
+		08FA78EC18A2938400097C6E /* ar1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787C18A2938300097C6E /* ar1.pdf */; };
+		08FA78ED18A2938400097C6E /* ar2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787D18A2938300097C6E /* ar2.pdf */; };
+		08FA78EE18A2938400097C6E /* b1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA787F18A2938300097C6E /* b1.pdf */; };
+		08FA78EF18A2938400097C6E /* b1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788018A2938300097C6E /* b1Snudd.pdf */; };
+		08FA78F018A2938400097C6E /* b2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788118A2938300097C6E /* b2.pdf */; };
+		08FA78F118A2938400097C6E /* b2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788218A2938300097C6E /* b2Snudd.pdf */; };
+		08FA78F218A2938400097C6E /* b3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788318A2938300097C6E /* b3.pdf */; };
+		08FA78F318A2938400097C6E /* b3Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788418A2938300097C6E /* b3Snudd.pdf */; };
+		08FA78F418A2938400097C6E /* p1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788618A2938300097C6E /* p1.pdf */; };
+		08FA78F518A2938400097C6E /* p2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788718A2938300097C6E /* p2.pdf */; };
+		08FA78F618A2938400097C6E /* e1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788918A2938300097C6E /* e1.pdf */; };
+		08FA78F718A2938400097C6E /* e1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788A18A2938300097C6E /* e1Snudd.pdf */; };
+		08FA78F818A2938400097C6E /* e2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788B18A2938300097C6E /* e2.pdf */; };
+		08FA78F918A2938400097C6E /* e3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788C18A2938300097C6E /* e3.pdf */; };
+		08FA78FA18A2938400097C6E /* e4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788D18A2938300097C6E /* e4.pdf */; };
+		08FA78FB18A2938400097C6E /* v1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA788F18A2938300097C6E /* v1.pdf */; };
+		08FA78FC18A2938400097C6E /* v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789018A2938300097C6E /* v2.pdf */; };
+		08FA78FD18A2938400097C6E /* v3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789118A2938300097C6E /* v3.pdf */; };
+		08FA78FE18A2938400097C6E /* v4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789218A2938300097C6E /* v4.pdf */; };
+		08FA78FF18A2938400097C6E /* v5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789318A2938300097C6E /* v5.pdf */; };
+		08FA790018A2938400097C6E /* v6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789418A2938300097C6E /* v6.pdf */; };
+		08FA790118A2938400097C6E /* v7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789518A2938300097C6E /* v7.pdf */; };
+		08FA790218A2938400097C6E /* v8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789618A2938300097C6E /* v8.pdf */; };
+		08FA790318A2938400097C6E /* f1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789818A2938300097C6E /* f1.pdf */; };
+		08FA790418A2938400097C6E /* f2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789918A2938300097C6E /* f2.pdf */; };
+		08FA790518A2938400097C6E /* f3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789A18A2938300097C6E /* f3.pdf */; };
+		08FA790618A2938400097C6E /* r1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789C18A2938300097C6E /* r1.pdf */; };
+		08FA790718A2938400097C6E /* r1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789D18A2938300097C6E /* r1Snudd.pdf */; };
+		08FA790818A2938400097C6E /* r2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789E18A2938300097C6E /* r2.pdf */; };
+		08FA790918A2938400097C6E /* r2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA789F18A2938300097C6E /* r2Snudd.pdf */; };
+		08FA790A18A2938400097C6E /* r3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A018A2938300097C6E /* r3.pdf */; };
+		08FA790B18A2938400097C6E /* ek1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A218A2938300097C6E /* ek1.pdf */; };
+		08FA790C18A2938400097C6E /* ek2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A318A2938300097C6E /* ek2.pdf */; };
+		08FA790D18A2938400097C6E /* ek3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A418A2938300097C6E /* ek3.pdf */; };
+		08FA790E18A2938400097C6E /* m1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A618A2938300097C6E /* m1.pdf */; };
+		08FA790F18A2938400097C6E /* m1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A718A2938300097C6E /* m1Snudd.pdf */; };
+		08FA791018A2938400097C6E /* m2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A818A2938300097C6E /* m2.pdf */; };
+		08FA791118A2938400097C6E /* m2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78A918A2938300097C6E /* m2Snudd.pdf */; };
+		08FA791218A2938400097C6E /* m3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78AA18A2938300097C6E /* m3.pdf */; };
+		08FA791318A2938400097C6E /* m3Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78AB18A2938300097C6E /* m3Snudd.pdf */; };
+		08FA791418A2938400097C6E /* m4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78AC18A2938300097C6E /* m4.pdf */; };
+		08FA791518A2938400097C6E /* m4Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78AD18A2938300097C6E /* m4Snudd.pdf */; };
+		08FA791618A2938400097C6E /* ep1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78AF18A2938300097C6E /* ep1.pdf */; };
+		08FA791718A2938400097C6E /* ep2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B018A2938300097C6E /* ep2.pdf */; };
+		08FA791818A2938400097C6E /* s1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B218A2938300097C6E /* s1.pdf */; };
+		08FA791918A2938400097C6E /* s1snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B318A2938300097C6E /* s1snudd.pdf */; };
+		08FA791A18A2938400097C6E /* s2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B418A2938300097C6E /* s2.pdf */; };
+		08FA791B18A2938400097C6E /* s3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B518A2938300097C6E /* s3.pdf */; };
+		08FA791C18A2938400097C6E /* s4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B618A2938300097C6E /* s4.pdf */; };
+		08FA791D18A2938400097C6E /* s4snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B718A2938300097C6E /* s4snudd.pdf */; };
+		08FA791E18A2938400097C6E /* \u03C11.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78B918A2938300097C6E /* \u03C11.pdf */; };
+		08FA791F18A2938400097C6E /* t1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78BB18A2938300097C6E /* t1.pdf */; };
+		08FA792018A2938400097C6E /* t1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78BC18A2938300097C6E /* t1Snudd.pdf */; };
+		08FA792118A2938400097C6E /* t2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78BD18A2938300097C6E /* t2.pdf */; };
+		08FA792218A2938400097C6E /* t2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78BE18A2938300097C6E /* t2Snudd.pdf */; };
+		08FA792318A2938400097C6E /* t3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78BF18A2938300097C6E /* t3.pdf */; };
+		08FA792418A2938400097C6E /* t3Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C018A2938300097C6E /* t3Snudd.pdf */; };
+		08FA792518A2938400097C6E /* t4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C118A2938300097C6E /* t4.pdf */; };
+		08FA792618A2938400097C6E /* t5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C218A2938300097C6E /* t5.pdf */; };
+		08FA792718A2938400097C6E /* pt1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C418A2938400097C6E /* pt1.pdf */; };
+		08FA792818A2938400097C6E /* atomcloud-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C618A2938400097C6E /* atomcloud-grey.png */; };
+		08FA792918A2938400097C6E /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C818A2938400097C6E /* Icon-120.png */; };
+		08FA792A18A2938400097C6E /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C918A2938400097C6E /* Icon-144.png */; };
+		08FA792B18A2938400097C6E /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CA18A2938400097C6E /* Icon-152.png */; };
+		08FA792C18A2938400097C6E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CB18A2938400097C6E /* Icon-72.png */; };
+		08FA792D18A2938400097C6E /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CC18A2938400097C6E /* Icon-76.png */; };
+		08FA792E18A2938400097C6E /* Icon-Med-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CD18A2938400097C6E /* Icon-Med-40.png */; };
+		08FA792F18A2938400097C6E /* Icon-Med-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CE18A2938400097C6E /* Icon-Med-40@2x.png */; };
+		08FA793018A2938400097C6E /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78CF18A2938400097C6E /* Icon-Small-50.png */; };
+		08FA793118A2938400097C6E /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78D018A2938400097C6E /* Icon-Small-50@2x.png */; };
+		08FA793218A2938400097C6E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78D118A2938400097C6E /* Icon-Small.png */; };
+		08FA793318A2938400097C6E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78D218A2938400097C6E /* Icon-Small@2x.png */; };
+		08FA793418A2938400097C6E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78D318A2938400097C6E /* Icon.png */; };
+		08FA793518A2938400097C6E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78D418A2938400097C6E /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,21 +134,126 @@
 		08FA780A18A28E4800097C6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08FA780C18A28E4800097C6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		08FA780E18A28E4800097C6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		08FA781218A28E4800097C6E /* Fysikkformler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fysikkformler-Info.plist"; sourceTree = "<group>"; };
-		08FA781418A28E4800097C6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		08FA781618A28E4800097C6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		08FA781818A28E4800097C6E /* Fysikkformler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fysikkformler-Prefix.pch"; sourceTree = "<group>"; };
-		08FA781918A28E4900097C6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		08FA781A18A28E4900097C6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		08FA781D18A28E4900097C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08FA781F18A28E4900097C6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		08FA782018A28E4900097C6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		08FA782218A28E4900097C6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		08FA782818A28E4900097C6E /* FysikkformlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FysikkformlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FA782918A28E4900097C6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		08FA783118A28E4900097C6E /* FysikkformlerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FysikkformlerTests-Info.plist"; sourceTree = "<group>"; };
 		08FA783318A28E4900097C6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08FA783518A28E4900097C6E /* FysikkformlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FysikkformlerTests.m; sourceTree = "<group>"; };
+		08FA784318A28F6C00097C6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		08FA784618A28FC300097C6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08FA784718A28FC300097C6E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08FA784818A28FC300097C6E /* Fysikkformler-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fysikkformler-Info.plist"; sourceTree = "<group>"; };
+		08FA784918A28FC300097C6E /* Fysikkformler-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fysikkformler-Prefix.pch"; sourceTree = "<group>"; };
+		08FA784A18A28FC300097C6E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		08FA784B18A28FC300097C6E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08FA785018A291D200097C6E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		08FA785318A2938300097C6E /* Formel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formel.h; sourceTree = "<group>"; };
+		08FA785418A2938300097C6E /* Formel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formel.m; sourceTree = "<group>"; };
+		08FA785618A2938300097C6E /* FormelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormelCell.xib; sourceTree = "<group>"; };
+		08FA785718A2938300097C6E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		08FA785918A2938300097C6E /* FormelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormelCell.h; sourceTree = "<group>"; };
+		08FA785A18A2938300097C6E /* FormelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormelCell.m; sourceTree = "<group>"; };
+		08FA785B18A2938300097C6E /* FormelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormelViewController.h; sourceTree = "<group>"; };
+		08FA785C18A2938300097C6E /* FormelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormelViewController.m; sourceTree = "<group>"; };
+		08FA785D18A2938300097C6E /* InfoViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewViewController.h; sourceTree = "<group>"; };
+		08FA785E18A2938300097C6E /* InfoViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewViewController.m; sourceTree = "<group>"; };
+		08FA785F18A2938300097C6E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		08FA786018A2938300097C6E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		08FA786318A2938300097C6E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		08FA786418A2938300097C6E /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		08FA786518A2938300097C6E /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		08FA786618A2938300097C6E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		08FA786718A2938300097C6E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		08FA786818A2938300097C6E /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		08FA786918A2938300097C6E /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		08FA786A18A2938300097C6E /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		08FA786B18A2938300097C6E /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		08FA786C18A2938300097C6E /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		08FA786D18A2938300097C6E /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		08FA786F18A2938300097C6E /* finito.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = finito.json; sourceTree = "<group>"; };
+		08FA787218A2938300097C6E /* a1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1.pdf; sourceTree = "<group>"; };
+		08FA787318A2938300097C6E /* a1snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1snudd.pdf; sourceTree = "<group>"; };
+		08FA787418A2938300097C6E /* a2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2.pdf; sourceTree = "<group>"; };
+		08FA787518A2938300097C6E /* a2snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2snudd.pdf; sourceTree = "<group>"; };
+		08FA787618A2938300097C6E /* a3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3.pdf; sourceTree = "<group>"; };
+		08FA787718A2938300097C6E /* a3snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3snudd.pdf; sourceTree = "<group>"; };
+		08FA787818A2938300097C6E /* a4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4.pdf; sourceTree = "<group>"; };
+		08FA787918A2938300097C6E /* a4snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4snudd.pdf; sourceTree = "<group>"; };
+		08FA787A18A2938300097C6E /* a5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a5.pdf; sourceTree = "<group>"; };
+		08FA787C18A2938300097C6E /* ar1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ar1.pdf; sourceTree = "<group>"; };
+		08FA787D18A2938300097C6E /* ar2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ar2.pdf; sourceTree = "<group>"; };
+		08FA787F18A2938300097C6E /* b1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b1.pdf; sourceTree = "<group>"; };
+		08FA788018A2938300097C6E /* b1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b1Snudd.pdf; sourceTree = "<group>"; };
+		08FA788118A2938300097C6E /* b2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b2.pdf; sourceTree = "<group>"; };
+		08FA788218A2938300097C6E /* b2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b2Snudd.pdf; sourceTree = "<group>"; };
+		08FA788318A2938300097C6E /* b3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b3.pdf; sourceTree = "<group>"; };
+		08FA788418A2938300097C6E /* b3Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = b3Snudd.pdf; sourceTree = "<group>"; };
+		08FA788618A2938300097C6E /* p1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = p1.pdf; sourceTree = "<group>"; };
+		08FA788718A2938300097C6E /* p2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = p2.pdf; sourceTree = "<group>"; };
+		08FA788918A2938300097C6E /* e1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = e1.pdf; sourceTree = "<group>"; };
+		08FA788A18A2938300097C6E /* e1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = e1Snudd.pdf; sourceTree = "<group>"; };
+		08FA788B18A2938300097C6E /* e2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = e2.pdf; sourceTree = "<group>"; };
+		08FA788C18A2938300097C6E /* e3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = e3.pdf; sourceTree = "<group>"; };
+		08FA788D18A2938300097C6E /* e4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = e4.pdf; sourceTree = "<group>"; };
+		08FA788F18A2938300097C6E /* v1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v1.pdf; sourceTree = "<group>"; };
+		08FA789018A2938300097C6E /* v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v2.pdf; sourceTree = "<group>"; };
+		08FA789118A2938300097C6E /* v3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v3.pdf; sourceTree = "<group>"; };
+		08FA789218A2938300097C6E /* v4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v4.pdf; sourceTree = "<group>"; };
+		08FA789318A2938300097C6E /* v5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v5.pdf; sourceTree = "<group>"; };
+		08FA789418A2938300097C6E /* v6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v6.pdf; sourceTree = "<group>"; };
+		08FA789518A2938300097C6E /* v7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v7.pdf; sourceTree = "<group>"; };
+		08FA789618A2938300097C6E /* v8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = v8.pdf; sourceTree = "<group>"; };
+		08FA789818A2938300097C6E /* f1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = f1.pdf; sourceTree = "<group>"; };
+		08FA789918A2938300097C6E /* f2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = f2.pdf; sourceTree = "<group>"; };
+		08FA789A18A2938300097C6E /* f3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = f3.pdf; sourceTree = "<group>"; };
+		08FA789C18A2938300097C6E /* r1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = r1.pdf; sourceTree = "<group>"; };
+		08FA789D18A2938300097C6E /* r1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = r1Snudd.pdf; sourceTree = "<group>"; };
+		08FA789E18A2938300097C6E /* r2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = r2.pdf; sourceTree = "<group>"; };
+		08FA789F18A2938300097C6E /* r2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = r2Snudd.pdf; sourceTree = "<group>"; };
+		08FA78A018A2938300097C6E /* r3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = r3.pdf; sourceTree = "<group>"; };
+		08FA78A218A2938300097C6E /* ek1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ek1.pdf; sourceTree = "<group>"; };
+		08FA78A318A2938300097C6E /* ek2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ek2.pdf; sourceTree = "<group>"; };
+		08FA78A418A2938300097C6E /* ek3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ek3.pdf; sourceTree = "<group>"; };
+		08FA78A618A2938300097C6E /* m1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m1.pdf; sourceTree = "<group>"; };
+		08FA78A718A2938300097C6E /* m1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m1Snudd.pdf; sourceTree = "<group>"; };
+		08FA78A818A2938300097C6E /* m2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m2.pdf; sourceTree = "<group>"; };
+		08FA78A918A2938300097C6E /* m2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m2Snudd.pdf; sourceTree = "<group>"; };
+		08FA78AA18A2938300097C6E /* m3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m3.pdf; sourceTree = "<group>"; };
+		08FA78AB18A2938300097C6E /* m3Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m3Snudd.pdf; sourceTree = "<group>"; };
+		08FA78AC18A2938300097C6E /* m4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m4.pdf; sourceTree = "<group>"; };
+		08FA78AD18A2938300097C6E /* m4Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = m4Snudd.pdf; sourceTree = "<group>"; };
+		08FA78AF18A2938300097C6E /* ep1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ep1.pdf; sourceTree = "<group>"; };
+		08FA78B018A2938300097C6E /* ep2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ep2.pdf; sourceTree = "<group>"; };
+		08FA78B218A2938300097C6E /* s1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s1.pdf; sourceTree = "<group>"; };
+		08FA78B318A2938300097C6E /* s1snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s1snudd.pdf; sourceTree = "<group>"; };
+		08FA78B418A2938300097C6E /* s2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s2.pdf; sourceTree = "<group>"; };
+		08FA78B518A2938300097C6E /* s3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s3.pdf; sourceTree = "<group>"; };
+		08FA78B618A2938300097C6E /* s4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s4.pdf; sourceTree = "<group>"; };
+		08FA78B718A2938300097C6E /* s4snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s4snudd.pdf; sourceTree = "<group>"; };
+		08FA78B918A2938300097C6E /* \u03C11.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "\\u03C11.pdf"; sourceTree = "<group>"; };
+		08FA78BB18A2938300097C6E /* t1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t1.pdf; sourceTree = "<group>"; };
+		08FA78BC18A2938300097C6E /* t1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t1Snudd.pdf; sourceTree = "<group>"; };
+		08FA78BD18A2938300097C6E /* t2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t2.pdf; sourceTree = "<group>"; };
+		08FA78BE18A2938300097C6E /* t2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t2Snudd.pdf; sourceTree = "<group>"; };
+		08FA78BF18A2938300097C6E /* t3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t3.pdf; sourceTree = "<group>"; };
+		08FA78C018A2938300097C6E /* t3Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t3Snudd.pdf; sourceTree = "<group>"; };
+		08FA78C118A2938300097C6E /* t4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t4.pdf; sourceTree = "<group>"; };
+		08FA78C218A2938300097C6E /* t5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t5.pdf; sourceTree = "<group>"; };
+		08FA78C418A2938400097C6E /* pt1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pt1.pdf; sourceTree = "<group>"; };
+		08FA78C618A2938400097C6E /* atomcloud-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atomcloud-grey.png"; sourceTree = "<group>"; };
+		08FA78C818A2938400097C6E /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		08FA78C918A2938400097C6E /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		08FA78CA18A2938400097C6E /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		08FA78CB18A2938400097C6E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		08FA78CC18A2938400097C6E /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		08FA78CD18A2938400097C6E /* Icon-Med-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Med-40.png"; sourceTree = "<group>"; };
+		08FA78CE18A2938400097C6E /* Icon-Med-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Med-40@2x.png"; sourceTree = "<group>"; };
+		08FA78CF18A2938400097C6E /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		08FA78D018A2938400097C6E /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		08FA78D118A2938400097C6E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		08FA78D218A2938400097C6E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		08FA78D318A2938400097C6E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		08FA78D418A2938400097C6E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FA784418A28F6C00097C6E /* QuartzCore.framework in Frameworks */,
 				08FA780D18A28E4800097C6E /* CoreGraphics.framework in Frameworks */,
 				08FA780F18A28E4800097C6E /* UIKit.framework in Frameworks */,
 				08FA780B18A28E4800097C6E /* Foundation.framework in Frameworks */,
@@ -82,6 +284,7 @@
 		08FA77FE18A28E4800097C6E = {
 			isa = PBXGroup;
 			children = (
+				08FA785018A291D200097C6E /* Default-568h@2x.png */,
 				08FA781018A28E4800097C6E /* Fysikkformler */,
 				08FA782F18A28E4900097C6E /* FysikkformlerTests */,
 				08FA780918A28E4800097C6E /* Frameworks */,
@@ -101,6 +304,7 @@
 		08FA780918A28E4800097C6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08FA784318A28F6C00097C6E /* QuartzCore.framework */,
 				08FA780A18A28E4800097C6E /* Foundation.framework */,
 				08FA780C18A28E4800097C6E /* CoreGraphics.framework */,
 				08FA780E18A28E4800097C6E /* UIKit.framework */,
@@ -112,26 +316,15 @@
 		08FA781018A28E4800097C6E /* Fysikkformler */ = {
 			isa = PBXGroup;
 			children = (
-				08FA781918A28E4900097C6E /* AppDelegate.h */,
-				08FA781A18A28E4900097C6E /* AppDelegate.m */,
-				08FA781C18A28E4900097C6E /* Main.storyboard */,
-				08FA781F18A28E4900097C6E /* ViewController.h */,
-				08FA782018A28E4900097C6E /* ViewController.m */,
-				08FA782218A28E4900097C6E /* Images.xcassets */,
-				08FA781118A28E4800097C6E /* Supporting Files */,
+				08FA785218A2938300097C6E /* Objects */,
+				08FA785518A2938300097C6E /* User Interfaces */,
+				08FA785818A2938300097C6E /* View Controllers */,
+				08FA786118A2938300097C6E /* Repos */,
+				08FA786E18A2938300097C6E /* Data */,
+				08FA78C518A2938400097C6E /* Assets */,
+				08FA784518A28FC300097C6E /* Supporting Files */,
 			);
 			path = Fysikkformler;
-			sourceTree = "<group>";
-		};
-		08FA781118A28E4800097C6E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				08FA781218A28E4800097C6E /* Fysikkformler-Info.plist */,
-				08FA781318A28E4800097C6E /* InfoPlist.strings */,
-				08FA781618A28E4800097C6E /* main.m */,
-				08FA781818A28E4800097C6E /* Fysikkformler-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		08FA782F18A28E4900097C6E /* FysikkformlerTests */ = {
@@ -150,6 +343,313 @@
 				08FA783218A28E4900097C6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08FA784518A28FC300097C6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08FA784618A28FC300097C6E /* AppDelegate.h */,
+				08FA784718A28FC300097C6E /* AppDelegate.m */,
+				08FA784818A28FC300097C6E /* Fysikkformler-Info.plist */,
+				08FA784918A28FC300097C6E /* Fysikkformler-Prefix.pch */,
+				08FA784A18A28FC300097C6E /* InfoPlist.strings */,
+				08FA784B18A28FC300097C6E /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "Assisting Files";
+			sourceTree = "<group>";
+		};
+		08FA785218A2938300097C6E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				08FA785318A2938300097C6E /* Formel.h */,
+				08FA785418A2938300097C6E /* Formel.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		08FA785518A2938300097C6E /* User Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				08FA785618A2938300097C6E /* FormelCell.xib */,
+				08FA785718A2938300097C6E /* iPhone.storyboard */,
+			);
+			path = "User Interfaces";
+			sourceTree = "<group>";
+		};
+		08FA785818A2938300097C6E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08FA785918A2938300097C6E /* FormelCell.h */,
+				08FA785A18A2938300097C6E /* FormelCell.m */,
+				08FA785B18A2938300097C6E /* FormelViewController.h */,
+				08FA785C18A2938300097C6E /* FormelViewController.m */,
+				08FA785D18A2938300097C6E /* InfoViewViewController.h */,
+				08FA785E18A2938300097C6E /* InfoViewViewController.m */,
+				08FA785F18A2938300097C6E /* StartViewController.h */,
+				08FA786018A2938300097C6E /* StartViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		08FA786118A2938300097C6E /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				08FA786218A2938300097C6E /* UIImage+PDF */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		08FA786218A2938300097C6E /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				08FA786318A2938300097C6E /* LICENSE.txt */,
+				08FA786418A2938300097C6E /* NSData+MD5.h */,
+				08FA786518A2938300097C6E /* NSData+MD5.m */,
+				08FA786618A2938300097C6E /* NSString+MD5.h */,
+				08FA786718A2938300097C6E /* NSString+MD5.m */,
+				08FA786818A2938300097C6E /* PDFView.h */,
+				08FA786918A2938300097C6E /* PDFView.m */,
+				08FA786A18A2938300097C6E /* UIImage+PDF.h */,
+				08FA786B18A2938300097C6E /* UIImage+PDF.m */,
+				08FA786C18A2938300097C6E /* UIView+Image.h */,
+				08FA786D18A2938300097C6E /* UIView+Image.m */,
+			);
+			path = "UIImage+PDF";
+			sourceTree = "<group>";
+		};
+		08FA786E18A2938300097C6E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08FA786F18A2938300097C6E /* finito.json */,
+				08FA787018A2938300097C6E /* PDF */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		08FA787018A2938300097C6E /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				08FA787118A2938300097C6E /* Akselerasjon */,
+				08FA787B18A2938300097C6E /* Arbeid */,
+				08FA787E18A2938300097C6E /* Bølgelengde */,
+				08FA788518A2938300097C6E /* Effekt */,
+				08FA788818A2938300097C6E /* Energi */,
+				08FA788E18A2938300097C6E /* Fart */,
+				08FA789718A2938300097C6E /* Frekvens */,
+				08FA789B18A2938300097C6E /* Friksjon */,
+				08FA78A118A2938300097C6E /* Kinetisk energi */,
+				08FA78A518A2938300097C6E /* Masse */,
+				08FA78AE18A2938300097C6E /* Potensiell energi */,
+				08FA78B118A2938300097C6E /* Strekning */,
+				08FA78B818A2938300097C6E /* Tetthet */,
+				08FA78BA18A2938300097C6E /* Tid */,
+				08FA78C318A2938300097C6E /* Trykk */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		08FA787118A2938300097C6E /* Akselerasjon */ = {
+			isa = PBXGroup;
+			children = (
+				08FA787218A2938300097C6E /* a1.pdf */,
+				08FA787318A2938300097C6E /* a1snudd.pdf */,
+				08FA787418A2938300097C6E /* a2.pdf */,
+				08FA787518A2938300097C6E /* a2snudd.pdf */,
+				08FA787618A2938300097C6E /* a3.pdf */,
+				08FA787718A2938300097C6E /* a3snudd.pdf */,
+				08FA787818A2938300097C6E /* a4.pdf */,
+				08FA787918A2938300097C6E /* a4snudd.pdf */,
+				08FA787A18A2938300097C6E /* a5.pdf */,
+			);
+			path = Akselerasjon;
+			sourceTree = "<group>";
+		};
+		08FA787B18A2938300097C6E /* Arbeid */ = {
+			isa = PBXGroup;
+			children = (
+				08FA787C18A2938300097C6E /* ar1.pdf */,
+				08FA787D18A2938300097C6E /* ar2.pdf */,
+			);
+			path = Arbeid;
+			sourceTree = "<group>";
+		};
+		08FA787E18A2938300097C6E /* Bølgelengde */ = {
+			isa = PBXGroup;
+			children = (
+				08FA787F18A2938300097C6E /* b1.pdf */,
+				08FA788018A2938300097C6E /* b1Snudd.pdf */,
+				08FA788118A2938300097C6E /* b2.pdf */,
+				08FA788218A2938300097C6E /* b2Snudd.pdf */,
+				08FA788318A2938300097C6E /* b3.pdf */,
+				08FA788418A2938300097C6E /* b3Snudd.pdf */,
+			);
+			path = "Bølgelengde";
+			sourceTree = "<group>";
+		};
+		08FA788518A2938300097C6E /* Effekt */ = {
+			isa = PBXGroup;
+			children = (
+				08FA788618A2938300097C6E /* p1.pdf */,
+				08FA788718A2938300097C6E /* p2.pdf */,
+			);
+			path = Effekt;
+			sourceTree = "<group>";
+		};
+		08FA788818A2938300097C6E /* Energi */ = {
+			isa = PBXGroup;
+			children = (
+				08FA788918A2938300097C6E /* e1.pdf */,
+				08FA788A18A2938300097C6E /* e1Snudd.pdf */,
+				08FA788B18A2938300097C6E /* e2.pdf */,
+				08FA788C18A2938300097C6E /* e3.pdf */,
+				08FA788D18A2938300097C6E /* e4.pdf */,
+			);
+			path = Energi;
+			sourceTree = "<group>";
+		};
+		08FA788E18A2938300097C6E /* Fart */ = {
+			isa = PBXGroup;
+			children = (
+				08FA788F18A2938300097C6E /* v1.pdf */,
+				08FA789018A2938300097C6E /* v2.pdf */,
+				08FA789118A2938300097C6E /* v3.pdf */,
+				08FA789218A2938300097C6E /* v4.pdf */,
+				08FA789318A2938300097C6E /* v5.pdf */,
+				08FA789418A2938300097C6E /* v6.pdf */,
+				08FA789518A2938300097C6E /* v7.pdf */,
+				08FA789618A2938300097C6E /* v8.pdf */,
+			);
+			path = Fart;
+			sourceTree = "<group>";
+		};
+		08FA789718A2938300097C6E /* Frekvens */ = {
+			isa = PBXGroup;
+			children = (
+				08FA789818A2938300097C6E /* f1.pdf */,
+				08FA789918A2938300097C6E /* f2.pdf */,
+				08FA789A18A2938300097C6E /* f3.pdf */,
+			);
+			path = Frekvens;
+			sourceTree = "<group>";
+		};
+		08FA789B18A2938300097C6E /* Friksjon */ = {
+			isa = PBXGroup;
+			children = (
+				08FA789C18A2938300097C6E /* r1.pdf */,
+				08FA789D18A2938300097C6E /* r1Snudd.pdf */,
+				08FA789E18A2938300097C6E /* r2.pdf */,
+				08FA789F18A2938300097C6E /* r2Snudd.pdf */,
+				08FA78A018A2938300097C6E /* r3.pdf */,
+			);
+			path = Friksjon;
+			sourceTree = "<group>";
+		};
+		08FA78A118A2938300097C6E /* Kinetisk energi */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78A218A2938300097C6E /* ek1.pdf */,
+				08FA78A318A2938300097C6E /* ek2.pdf */,
+				08FA78A418A2938300097C6E /* ek3.pdf */,
+			);
+			path = "Kinetisk energi";
+			sourceTree = "<group>";
+		};
+		08FA78A518A2938300097C6E /* Masse */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78A618A2938300097C6E /* m1.pdf */,
+				08FA78A718A2938300097C6E /* m1Snudd.pdf */,
+				08FA78A818A2938300097C6E /* m2.pdf */,
+				08FA78A918A2938300097C6E /* m2Snudd.pdf */,
+				08FA78AA18A2938300097C6E /* m3.pdf */,
+				08FA78AB18A2938300097C6E /* m3Snudd.pdf */,
+				08FA78AC18A2938300097C6E /* m4.pdf */,
+				08FA78AD18A2938300097C6E /* m4Snudd.pdf */,
+			);
+			path = Masse;
+			sourceTree = "<group>";
+		};
+		08FA78AE18A2938300097C6E /* Potensiell energi */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78AF18A2938300097C6E /* ep1.pdf */,
+				08FA78B018A2938300097C6E /* ep2.pdf */,
+			);
+			path = "Potensiell energi";
+			sourceTree = "<group>";
+		};
+		08FA78B118A2938300097C6E /* Strekning */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78B218A2938300097C6E /* s1.pdf */,
+				08FA78B318A2938300097C6E /* s1snudd.pdf */,
+				08FA78B418A2938300097C6E /* s2.pdf */,
+				08FA78B518A2938300097C6E /* s3.pdf */,
+				08FA78B618A2938300097C6E /* s4.pdf */,
+				08FA78B718A2938300097C6E /* s4snudd.pdf */,
+			);
+			path = Strekning;
+			sourceTree = "<group>";
+		};
+		08FA78B818A2938300097C6E /* Tetthet */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78B918A2938300097C6E /* \u03C11.pdf */,
+			);
+			path = Tetthet;
+			sourceTree = "<group>";
+		};
+		08FA78BA18A2938300097C6E /* Tid */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78BB18A2938300097C6E /* t1.pdf */,
+				08FA78BC18A2938300097C6E /* t1Snudd.pdf */,
+				08FA78BD18A2938300097C6E /* t2.pdf */,
+				08FA78BE18A2938300097C6E /* t2Snudd.pdf */,
+				08FA78BF18A2938300097C6E /* t3.pdf */,
+				08FA78C018A2938300097C6E /* t3Snudd.pdf */,
+				08FA78C118A2938300097C6E /* t4.pdf */,
+				08FA78C218A2938300097C6E /* t5.pdf */,
+			);
+			path = Tid;
+			sourceTree = "<group>";
+		};
+		08FA78C318A2938300097C6E /* Trykk */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78C418A2938400097C6E /* pt1.pdf */,
+			);
+			path = Trykk;
+			sourceTree = "<group>";
+		};
+		08FA78C518A2938400097C6E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78C618A2938400097C6E /* atomcloud-grey.png */,
+				08FA78C718A2938400097C6E /* Icon */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		08FA78C718A2938400097C6E /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				08FA78C818A2938400097C6E /* Icon-120.png */,
+				08FA78C918A2938400097C6E /* Icon-144.png */,
+				08FA78CA18A2938400097C6E /* Icon-152.png */,
+				08FA78CB18A2938400097C6E /* Icon-72.png */,
+				08FA78CC18A2938400097C6E /* Icon-76.png */,
+				08FA78CD18A2938400097C6E /* Icon-Med-40.png */,
+				08FA78CE18A2938400097C6E /* Icon-Med-40@2x.png */,
+				08FA78CF18A2938400097C6E /* Icon-Small-50.png */,
+				08FA78D018A2938400097C6E /* Icon-Small-50@2x.png */,
+				08FA78D118A2938400097C6E /* Icon-Small.png */,
+				08FA78D218A2938400097C6E /* Icon-Small@2x.png */,
+				08FA78D318A2938400097C6E /* Icon.png */,
+				08FA78D418A2938400097C6E /* Icon@2x.png */,
+			);
+			path = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +699,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Oscar Apeland";
 				TargetAttributes = {
+					08FA780618A28E4800097C6E = {
+						DevelopmentTeam = V3S3PN2CV8;
+					};
 					08FA782718A28E4900097C6E = {
 						TestTargetID = 08FA780618A28E4800097C6E;
 					};
@@ -228,9 +731,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08FA782318A28E4900097C6E /* Images.xcassets in Resources */,
-				08FA781518A28E4800097C6E /* InfoPlist.strings in Resources */,
-				08FA781E18A28E4900097C6E /* Main.storyboard in Resources */,
+				08FA791C18A2938400097C6E /* s4.pdf in Resources */,
+				08FA792818A2938400097C6E /* atomcloud-grey.png in Resources */,
+				08FA790B18A2938400097C6E /* ek1.pdf in Resources */,
+				08FA791D18A2938400097C6E /* s4snudd.pdf in Resources */,
+				08FA790218A2938400097C6E /* v8.pdf in Resources */,
+				08FA78FE18A2938400097C6E /* v4.pdf in Resources */,
+				08FA78F918A2938400097C6E /* e3.pdf in Resources */,
+				08FA78F518A2938400097C6E /* p2.pdf in Resources */,
+				08FA791618A2938400097C6E /* ep1.pdf in Resources */,
+				08FA790418A2938400097C6E /* f2.pdf in Resources */,
+				08FA78E318A2938400097C6E /* a1.pdf in Resources */,
+				08FA792C18A2938400097C6E /* Icon-72.png in Resources */,
+				08FA790318A2938400097C6E /* f1.pdf in Resources */,
+				08FA78F118A2938400097C6E /* b2Snudd.pdf in Resources */,
+				08FA792B18A2938400097C6E /* Icon-152.png in Resources */,
+				08FA78F718A2938400097C6E /* e1Snudd.pdf in Resources */,
+				08FA790018A2938400097C6E /* v6.pdf in Resources */,
+				08FA792518A2938400097C6E /* t4.pdf in Resources */,
+				08FA792218A2938400097C6E /* t2Snudd.pdf in Resources */,
+				08FA793518A2938400097C6E /* Icon@2x.png in Resources */,
+				08FA791018A2938400097C6E /* m2.pdf in Resources */,
+				08FA790F18A2938400097C6E /* m1Snudd.pdf in Resources */,
+				08FA793318A2938400097C6E /* Icon-Small@2x.png in Resources */,
+				08FA78E218A2938400097C6E /* finito.json in Resources */,
+				08FA793418A2938400097C6E /* Icon.png in Resources */,
+				08FA790918A2938400097C6E /* r2Snudd.pdf in Resources */,
+				08FA78EA18A2938400097C6E /* a4snudd.pdf in Resources */,
+				08FA78F218A2938400097C6E /* b3.pdf in Resources */,
+				08FA78E718A2938400097C6E /* a3.pdf in Resources */,
+				08FA791518A2938400097C6E /* m4Snudd.pdf in Resources */,
+				08FA791B18A2938400097C6E /* s3.pdf in Resources */,
+				08FA791118A2938400097C6E /* m2Snudd.pdf in Resources */,
+				08FA78F318A2938400097C6E /* b3Snudd.pdf in Resources */,
+				08FA78EB18A2938400097C6E /* a5.pdf in Resources */,
+				08FA790718A2938400097C6E /* r1Snudd.pdf in Resources */,
+				08FA78E618A2938400097C6E /* a2snudd.pdf in Resources */,
+				08FA78ED18A2938400097C6E /* ar2.pdf in Resources */,
+				08FA78DC18A2938400097C6E /* LICENSE.txt in Resources */,
+				08FA791318A2938400097C6E /* m3Snudd.pdf in Resources */,
+				08FA792918A2938400097C6E /* Icon-120.png in Resources */,
+				08FA790E18A2938400097C6E /* m1.pdf in Resources */,
+				08FA790518A2938400097C6E /* f3.pdf in Resources */,
+				08FA791A18A2938400097C6E /* s2.pdf in Resources */,
+				08FA792F18A2938400097C6E /* Icon-Med-40@2x.png in Resources */,
+				08FA78E818A2938400097C6E /* a3snudd.pdf in Resources */,
+				08FA790618A2938400097C6E /* r1.pdf in Resources */,
+				08FA78D618A2938400097C6E /* FormelCell.xib in Resources */,
+				08FA791218A2938400097C6E /* m3.pdf in Resources */,
+				08FA78E918A2938400097C6E /* a4.pdf in Resources */,
+				08FA78EC18A2938400097C6E /* ar1.pdf in Resources */,
+				08FA78F418A2938400097C6E /* p1.pdf in Resources */,
+				08FA78F818A2938400097C6E /* e2.pdf in Resources */,
+				08FA78FF18A2938400097C6E /* v5.pdf in Resources */,
+				08FA790118A2938400097C6E /* v7.pdf in Resources */,
+				08FA792418A2938400097C6E /* t3Snudd.pdf in Resources */,
+				08FA793118A2938400097C6E /* Icon-Small-50@2x.png in Resources */,
+				08FA78FA18A2938400097C6E /* e4.pdf in Resources */,
+				08FA78FB18A2938400097C6E /* v1.pdf in Resources */,
+				08FA791818A2938400097C6E /* s1.pdf in Resources */,
+				08FA791F18A2938400097C6E /* t1.pdf in Resources */,
+				08FA785118A291D200097C6E /* Default-568h@2x.png in Resources */,
+				08FA790C18A2938400097C6E /* ek2.pdf in Resources */,
+				08FA792118A2938400097C6E /* t2.pdf in Resources */,
+				08FA790A18A2938400097C6E /* r3.pdf in Resources */,
+				08FA791418A2938400097C6E /* m4.pdf in Resources */,
+				08FA792018A2938400097C6E /* t1Snudd.pdf in Resources */,
+				08FA793018A2938400097C6E /* Icon-Small-50.png in Resources */,
+				08FA792D18A2938400097C6E /* Icon-76.png in Resources */,
+				08FA78E518A2938400097C6E /* a2.pdf in Resources */,
+				08FA790D18A2938400097C6E /* ek3.pdf in Resources */,
+				08FA78FC18A2938400097C6E /* v2.pdf in Resources */,
+				08FA790818A2938400097C6E /* r2.pdf in Resources */,
+				08FA78F618A2938400097C6E /* e1.pdf in Resources */,
+				08FA791918A2938400097C6E /* s1snudd.pdf in Resources */,
+				08FA792718A2938400097C6E /* pt1.pdf in Resources */,
+				08FA78EE18A2938400097C6E /* b1.pdf in Resources */,
+				08FA791E18A2938400097C6E /* \u03C11.pdf in Resources */,
+				08FA78EF18A2938400097C6E /* b1Snudd.pdf in Resources */,
+				08FA791718A2938400097C6E /* ep2.pdf in Resources */,
+				08FA784E18A28FC300097C6E /* InfoPlist.strings in Resources */,
+				08FA78E418A2938400097C6E /* a1snudd.pdf in Resources */,
+				08FA792618A2938400097C6E /* t5.pdf in Resources */,
+				08FA793218A2938400097C6E /* Icon-Small.png in Resources */,
+				08FA78FD18A2938400097C6E /* v3.pdf in Resources */,
+				08FA792318A2938400097C6E /* t3.pdf in Resources */,
+				08FA792A18A2938400097C6E /* Icon-144.png in Resources */,
+				08FA792E18A2938400097C6E /* Icon-Med-40.png in Resources */,
+				08FA78F018A2938400097C6E /* b2.pdf in Resources */,
+				08FA78D718A2938400097C6E /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +838,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08FA782118A28E4900097C6E /* ViewController.m in Sources */,
-				08FA781B18A28E4900097C6E /* AppDelegate.m in Sources */,
-				08FA781718A28E4800097C6E /* main.m in Sources */,
+				08FA78D918A2938400097C6E /* FormelViewController.m in Sources */,
+				08FA78D818A2938400097C6E /* FormelCell.m in Sources */,
+				08FA784F18A28FC300097C6E /* main.m in Sources */,
+				08FA78E018A2938400097C6E /* UIImage+PDF.m in Sources */,
+				08FA78E118A2938400097C6E /* UIView+Image.m in Sources */,
+				08FA78DE18A2938400097C6E /* NSString+MD5.m in Sources */,
+				08FA78DD18A2938400097C6E /* NSData+MD5.m in Sources */,
+				08FA78DF18A2938400097C6E /* PDFView.m in Sources */,
+				08FA78DB18A2938400097C6E /* StartViewController.m in Sources */,
+				08FA78DA18A2938400097C6E /* InfoViewViewController.m in Sources */,
+				08FA78D518A2938400097C6E /* Formel.m in Sources */,
+				08FA784C18A28FC300097C6E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,22 +872,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		08FA781318A28E4800097C6E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08FA781418A28E4800097C6E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		08FA781C18A28E4900097C6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08FA781D18A28E4900097C6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08FA783218A28E4900097C6E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -376,11 +958,10 @@
 		08FA783A18A28E4900097C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fysikkformler/Fysikkformler-Prefix.pch";
-				INFOPLIST_FILE = "Fysikkformler/Fysikkformler-Info.plist";
+				GCC_PREFIX_HEADER = "Fysikkformler/Assisting Files/Fysikkformler-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fysikkformler/Assisting Files/Fysikkformler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,11 +970,10 @@
 		08FA783B18A28E4900097C6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Fysikkformler/Fysikkformler-Prefix.pch";
-				INFOPLIST_FILE = "Fysikkformler/Fysikkformler-Info.plist";
+				GCC_PREFIX_HEADER = "Fysikkformler/Assisting Files/Fysikkformler-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Fysikkformler/Assisting Files/Fysikkformler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
