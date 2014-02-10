@@ -36,42 +36,22 @@
     self.allTypes = @{@"a":@"Akselerasjon",
                       @"W":@"Arbeid",
                       @"\u03BB":@"Bølgelengde",
-                      @"p":@"Effekt",
-                      @"a":@"Akselerasjon",
-                      //@"F":@"Krefter",
-                 @"\u03C1":@"Massetetthet",
-                      @"V":@"Volum", //vi har ingen vei videre ennå
-                      @"W":@"Arbeid",
-                      @"R":@"Friksjon",
                       @"P":@"Effekt",
-                      @"e":@"Energi",
-                      @"L":@"Luftmotstand",
+                      @"E":@"Energi",
+                      @"v":@"Fart",
+                      @"f":@"Frekvens",
+                      @"R":@"Friksjon",
+                      @"Ek":@"Kinetisk energi",
+                      @"m":@"Masse",
+                      @"Ep":@"Potensiell energi",
+                      @"s":@"Strekning",
+                      @"\u03C1":@"Massetetthet",
+                      @"t":@"Tid",
+                      @"p":@"Trykk",
+                      //@"F":@"Krefter",
+                      @"V":@"Volum", //vi har ingen vei videre ennå
                       //@"Q":@"Varme",
-                      @"T":@"Temperatur",
-                 @"\u03BB":@"Bølgelengde",
-                      @"f":@"Frekvens"};
-    
-    /* 
-     
-     akse
-     arb
-     bøl / lambda
-     Effekt
-     energi
-     fart
-     frekvens
-     firksjo
-     kin e
-     masse
-     potet
-     strek
-     tett / rho
-     tid
-     trykk
-     
-     
-     */
-    
+                      };
     
     int spacing = 2;
     NSArray *sortedKeys = [self.allTypes.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
