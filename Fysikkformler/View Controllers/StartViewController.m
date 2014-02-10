@@ -24,7 +24,11 @@
     self.navigationItem.title = @"Velg enhet";
     self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [btn addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
