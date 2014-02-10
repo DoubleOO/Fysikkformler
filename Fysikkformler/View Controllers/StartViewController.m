@@ -33,25 +33,44 @@
     [btn addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     
-    self.allTypes = @{@"m":@"Masse",
-                      @"s":@"Strekning",
-                      @"t":@"Tid",
-                      @"v":@"Fart",
-                      @"a":@"Akselrasjon",
-                      @"N":@"Newton",
-                      @"F":@"Krefter",
-                      @"G":@"Gravitasjon",
+    self.allTypes = @{@"a":@"Akselerasjon",
+                      @"W":@"Arbeid",
+                      @"\u03BB":@"Bølgelengde",
+                      @"p":@"Effekt",
+                      @"a":@"Akselerasjon",
+                      //@"F":@"Krefter",
                  @"\u03C1":@"Massetetthet",
-                      @"V":@"Volum",
+                      @"V":@"Volum", //vi har ingen vei videre ennå
                       @"W":@"Arbeid",
                       @"R":@"Friksjon",
                       @"P":@"Effekt",
-                      @"E":@"Energi",
+                      @"e":@"Energi",
                       @"L":@"Luftmotstand",
-                      @"Q":@"Varme",
+                      //@"Q":@"Varme",
                       @"T":@"Temperatur",
                  @"\u03BB":@"Bølgelengde",
                       @"f":@"Frekvens"};
+    
+    /* 
+     
+     akse
+     arb
+     bøl / lambda
+     Effekt
+     energi
+     fart
+     frekvens
+     firksjo
+     kin e
+     masse
+     potet
+     strek
+     tett / rho
+     tid
+     trykk
+     
+     
+     */
     
     
     int spacing = 2;

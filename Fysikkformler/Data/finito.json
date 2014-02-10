@@ -44,7 +44,7 @@
           "Σ F",
           "m"
         ],
-        "note": "-"
+        "note": "denne er jeg usikker på "
       },
       {
         "contains": [
@@ -119,11 +119,18 @@
           "λ",
           "c"
         ],
-        "note": "-"
+        "note": "c er lysfarten, 3,00*10^8"
+      },
+      {
+        "contains": [
+          "λ",
+          "c"
+        ],
+        "note": "c er lysfarten, 3,00*10^8"
       }
     ]
   },
-  "b": {
+  "λ": {
     "formulas": [
       {
         "contains": [
@@ -161,18 +168,18 @@
       },
       {
         "contains": [
-          "ek",
+          "Ek",
           "v"
         ],
         "note": "-"
       },
       {
         "contains": [
-          "ep",
+          "Ep",
           "g",
           "h"
         ],
-        "note": "g = 9,81 m^2/s^2"
+        "note": "g = 9,81 m/s^2"
       },
        {
         "contains": [
@@ -195,7 +202,7 @@
       }
     ]
 },
-  "pt": {
+  "p": {
     "formulas": [
       {
         "contains": [
@@ -207,7 +214,7 @@
     ]
 
     },
-  "ek": {
+  "Ek": {
     "formulas": [
       {
         "contains": [
@@ -229,11 +236,11 @@
           "v",
           "h"
         ],
-        "note": "g = 9,81 m/s. Massen kan i enkelte tilfeller strykes bort."
+        "note": "g = 9,81 m/s^2. Massen kan i enkelte tilfeller strykes bort."
       }
     ]
 },
-  "ep": {
+  "Ep": {
     "formulas": [
       {
         "contains": [
@@ -248,12 +255,12 @@
           "v",
           "h"
         ],
-        "note": "g = 9,81 m/s. Massen kan i enkelte tilfeller strykes bort."
+        "note": "g = 9,81 m/s^2. Massen kan i enkelte tilfeller strykes bort."
       }
     ]
   
   },
-    "e": {
+    "E": {
         "formulas": [
           {
             "contains": [
@@ -286,7 +293,7 @@
         }
       ]
   },
-  "p": {
+  "P": {
     "formulas": [
       {
         "contains": [
@@ -304,11 +311,11 @@
       }
     ]
 },
-  "ar": {
+  "W": {
     "formulas": [
       {
         "contains": [
-          "f",
+          "F",
           "s",
           "cos\u03D5"
         ],
@@ -324,7 +331,7 @@
     ]
 
   },
-  "r": {
+  "R": {
     "formulas": [
       {
         "contains": [
