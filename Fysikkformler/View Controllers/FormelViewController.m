@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    NSLog(@"Unit %@",self.currentUnit);
     NSString *headerString = [[NSString alloc]initWithFormat:@"%@",[self.allTypes objectForKey:self.currentUnit]];
     self.navigationItem.title = headerString;
 
@@ -67,10 +67,10 @@
         
         [biggestPDFArray addObject:size];
         
-        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%isnudd.pdf",self.currentUnit,num];
+        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",self.currentUnit,num];
         UIImage *flipImage = [UIImage originalSizeImageWithPDFNamed:flipImageString];
         NSNumber *flipSize = [NSNumber numberWithInt:flipImage.size.width];
-
+        NSLog(@"%@ %@",flipImageString,imageString);
         [biggestPDFArray addObject:flipSize];
 
     }
@@ -174,7 +174,6 @@
     cell.noteLabel.text = formel.note;
     cell.mainFormulaImageView.image = formel.mainFormelImage;
     cell.flipFormulaImageView.image = formel.flipFormelImage;
-    NSLog(@"%@",NSStringFromCGSize(formel.flipFormelImage.size));
     cell.flipFormulaImageView.hidden = YES;
     return cell;
 

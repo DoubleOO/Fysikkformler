@@ -32,11 +32,13 @@
 
         
         //FLIPPEDIMAGE
-        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%isnudd.pdf",unit,num];
+        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",unit,num];
         UIImage *flippedImage = [UIImage originalSizeImageWithPDFNamed:flipImageString];
         scaleX = flippedImage.size.width * scale;
         self.flipFormelImage = [UIImage imageWithPDFNamed:flipImageString atWidth:scaleX];
-        
+        if (!flippedImage) {
+            self.flipFormelImage = self.mainFormelImage;
+        }
     }
     return self;
 }
