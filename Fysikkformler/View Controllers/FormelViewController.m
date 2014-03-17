@@ -10,12 +10,14 @@
 #import "FormelCell.h"
 #import "Formel.h"
 #import "UIImage+PDF.h"
+#import "Singleton.h"
 
 
 @interface FormelViewController ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate,UIActionSheetDelegate>
 @property UITableView *tableView;
 @property NSMutableArray *allFormulas;
 @property NSMutableArray *currentFormulas;
+@property NSDictionary *contains;
 @end
 
 @implementation FormelViewController
@@ -24,7 +26,7 @@
 {
     [super viewDidLoad];
     NSLog(@"Unit %@",self.currentUnit);
-    NSString *headerString = [[NSString alloc]initWithFormat:@"%@",[self.allTypes objectForKey:self.currentUnit]];
+    NSString *headerString = [[NSString alloc]initWithFormat:@"%@",[self.currentUnit objectForKey:@"name"]];
     self.navigationItem.title = headerString;
 
     self.allFormulas = [[NSMutableArray alloc]init];
@@ -48,11 +50,14 @@
         NSLog(@"%@",error);
     }
     
-    NSDictionary *currentDictionary = [JSONDict objectForKey:self.currentUnit];
+    NSDictionary *currentDictionary = [JSONDict objectForKey:[self.currentUnit objectForKey:@"filepre"]];
     
     NSMutableArray *formulasForCurrentUnit = [[NSMutableArray alloc]init];
     formulasForCurrentUnit = [currentDictionary objectForKey:@"formulas"];
-    
+    /***BRIDGE CONTAINS TO FILEPRE***/
+    self.contains = @{@"a": @"a",
+                      @"v": @"v",
+                      @"W": @"W"};
     
     
     
@@ -61,7 +66,7 @@
     
     for (int i = 0; i<=formulasForCurrentUnit.count; i++) {
         int num = i+1;
-        NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i.pdf",self.currentUnit,num];
+        NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i.pdf",[self.currentUnit objectForKey:@"filepre"],num];
         UIImage *originalImage = [UIImage originalSizeImageWithPDFNamed:imageString];
         NSNumber *size = [NSNumber numberWithInt:originalImage.size.width];
         
@@ -75,14 +80,14 @@
 
     }
     
-    NSNumber * max = [biggestPDFArray valueForKeyPath:@"@max.self"];
+    NSNumber *max = [biggestPDFArray valueForKeyPath:@"@max.self"];
     float scaleBy = 310/max.floatValue;
     
     
     /***MAKING EACH FORMULA***/
     for (int i = 0; i<formulasForCurrentUnit.count; i++) {
         NSDictionary *formulaInDict = [formulasForCurrentUnit objectAtIndex:i];
-        Formel *formel = [[Formel alloc]initWithDict:formulaInDict forChar:self.currentUnit andNumber:i+1 scaleBy:scaleBy];
+        Formel *formel = [[Formel alloc]initWithDict:formulaInDict forChar:[self.currentUnit objectForKey:@"filepre"] andNumber:i+1 scaleBy:scaleBy];
         [self.allFormulas addObject:formel];
     }
     
@@ -106,26 +111,19 @@
     if (gestureRecognizer.state != UIGestureRecognizerStateBegan) {
         return;
     }
-    CGPoint p = [gestureRecognizer locationInView:self.tableView];
+    CGPoint point = [gestureRecognizer locationInView:self.tableView];
     
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:p];
-    if (indexPath == nil){
-        NSLog(@"couldn't find index path");
-    } else {
-        //FormelCell* cell = (FormelCell*)[self.tableView cellForRowAtIndexPath:indexPath];
-        NSInteger cellRow = indexPath.row;
-        Formel *selectedFormel = [self.allFormulas objectAtIndex:cellRow];
-        [self presentActionSheetWithUnits:selectedFormel.contains];
-        // do stuff with the cell
-    }
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point];
+    Formel *selectedFormel = [self.allFormulas objectAtIndex:indexPath.row];
+    [self presentActionSheetWithUnits:selectedFormel.contains];
 }
 -(void)presentActionSheetWithUnits:(NSArray *)units{
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Solve for.."
                                                              delegate:self
                                                     cancelButtonTitle:nil
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:nil];
-    
     for (NSString *title in units) {
         [actionSheet addButtonWithTitle:title];
     }
@@ -136,13 +134,21 @@
     [actionSheet showInView:self.view];
 }
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSString *buttonTitle =  [actionSheet buttonTitleAtIndex:buttonIndex];
-    if ([buttonTitle isEqualToString:@"Avbryt"]) {
+    NSString *title =  [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([title isEqualToString:@"Avbryt"]) {
         return;
     }
+    NSDictionary *newFormula;
+    for (NSDictionary*dict in [Singleton sharedData].menuObjects) {
+        if ([[dict objectForKey:@"symbol"]isEqualToString:[self.contains objectForKey:title]]) {
+            newFormula = dict;
+            break;
+        }
+    }
+    
+    
     FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
-    formelView.currentUnit = buttonTitle;
-    formelView.allTypes = self.allTypes;
+    formelView.currentUnit = newFormula;
     [self.navigationController pushViewController:formelView animated:YES];
 
 }
@@ -164,7 +170,6 @@
         cell = [[FormelCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         
     }
-    [cell setupGestures];
     
     cell.mainFormulaImageView.contentMode = UIViewContentModeCenter;
     cell.flipFormulaImageView.contentMode = UIViewContentModeCenter;

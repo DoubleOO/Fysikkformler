@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FormelViewController : UIViewController
-@property NSString *currentUnit;
-@property NSDictionary *allTypes;
+@property NSDictionary *currentUnit;
+
 @end

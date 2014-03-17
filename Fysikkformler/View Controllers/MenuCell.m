@@ -1,22 +1,27 @@
 //
-//  FormelCell.m
-//  Fys1Formel
+//  MenuCell.m
+//  Fysikkformler
 //
-//  Created by Oscar Apeland on 18.12.13.
-//  Copyright (c) 2013 Oscar Apeland. All rights reserved.
+//  Created by Oscar Apeland on 17.03.14.
+//  Copyright (c) 2014 Oscar Apeland. All rights reserved.
 //
 
-#import "FormelCell.h"
+#import "MenuCell.h"
 
-@implementation FormelCell
+@implementation MenuCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        
+        // Initialization code
     }
     return self;
+}
+
+- (void)awakeFromNib
+{
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815C0A218D6F48300DF9630 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815C0A118D6F48300DF9630 /* MenuCell.m */; };
 		08395E8518A9641400CDCDFC /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E7818A9641400CDCDFC /* Icon-120.png */; };
 		08395E8618A9641400CDCDFC /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E7918A9641400CDCDFC /* Icon-144.png */; };
 		08395E8718A9641400CDCDFC /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E7A18A9641400CDCDFC /* Icon-152.png */; };
@@ -20,6 +21,11 @@
 		08395E8F18A9641400CDCDFC /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8218A9641400CDCDFC /* Icon-Small@2x.png */; };
 		08395E9018A9641400CDCDFC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8318A9641400CDCDFC /* Icon.png */; };
 		08395E9118A9641400CDCDFC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8418A9641400CDCDFC /* Icon@2x.png */; };
+		085FDF4B18D7066200F3465A /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FDF4A18D7066200F3465A /* Singleton.m */; };
+		085FDF4F18D7173900F3465A /* 480h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4D18D7173900F3465A /* 480h@2x.png */; };
+		085FDF5018D7173900F3465A /* 568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4E18D7173900F3465A /* 568h@2x.png */; };
+		085FDF5218D717A600F3465A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF5118D717A600F3465A /* Images.xcassets */; };
+		08AD07CC18D6F5810037DC80 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AD07CB18D6F5810037DC80 /* MenuCell.xib */; };
 		08FA780B18A28E4800097C6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780A18A28E4800097C6E /* Foundation.framework */; };
 		08FA780D18A28E4800097C6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780C18A28E4800097C6E /* CoreGraphics.framework */; };
 		08FA780F18A28E4800097C6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA780E18A28E4800097C6E /* UIKit.framework */; };
@@ -32,7 +38,6 @@
 		08FA784C18A28FC300097C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA784718A28FC300097C6E /* AppDelegate.m */; };
 		08FA784E18A28FC300097C6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08FA784A18A28FC300097C6E /* InfoPlist.strings */; };
 		08FA784F18A28FC300097C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA784B18A28FC300097C6E /* main.m */; };
-		08FA785118A291D200097C6E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785018A291D200097C6E /* Default-568h@2x.png */; };
 		08FA78D518A2938400097C6E /* Formel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA785418A2938300097C6E /* Formel.m */; };
 		08FA78D618A2938400097C6E /* FormelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785618A2938300097C6E /* FormelCell.xib */; };
 		08FA78D718A2938400097C6E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FA785718A2938300097C6E /* iPhone.storyboard */; };
@@ -131,6 +136,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0815C0A018D6F48300DF9630 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		0815C0A118D6F48300DF9630 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 		08395E7818A9641400CDCDFC /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		08395E7918A9641400CDCDFC /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
 		08395E7A18A9641400CDCDFC /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
@@ -144,6 +151,12 @@
 		08395E8218A9641400CDCDFC /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		08395E8318A9641400CDCDFC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		08395E8418A9641400CDCDFC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		085FDF4918D7066200F3465A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		085FDF4A18D7066200F3465A /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		085FDF4D18D7173900F3465A /* 480h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480h@2x.png"; sourceTree = "<group>"; };
+		085FDF4E18D7173900F3465A /* 568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "568h@2x.png"; sourceTree = "<group>"; };
+		085FDF5118D717A600F3465A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08AD07CB18D6F5810037DC80 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		08FA780718A28E4800097C6E /* Fysikkformler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fysikkformler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FA780A18A28E4800097C6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08FA780C18A28E4800097C6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,7 +173,6 @@
 		08FA784918A28FC300097C6E /* Fysikkformler-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fysikkformler-Prefix.pch"; sourceTree = "<group>"; };
 		08FA784A18A28FC300097C6E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		08FA784B18A28FC300097C6E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		08FA785018A291D200097C6E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		08FA785318A2938300097C6E /* Formel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formel.h; sourceTree = "<group>"; };
 		08FA785418A2938300097C6E /* Formel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Formel.m; sourceTree = "<group>"; };
 		08FA785618A2938300097C6E /* FormelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormelCell.xib; sourceTree = "<group>"; };
@@ -283,6 +295,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0815C0A318D6F48A00DF9630 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				08FA785918A2938300097C6E /* FormelCell.h */,
+				08FA785A18A2938300097C6E /* FormelCell.m */,
+				0815C0A018D6F48300DF9630 /* MenuCell.h */,
+				0815C0A118D6F48300DF9630 /* MenuCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		08395E7718A9641400CDCDFC /* Ikoner */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,10 +326,18 @@
 			path = Ikoner;
 			sourceTree = "<group>";
 		};
+		085FDF4C18D7173900F3465A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				085FDF4D18D7173900F3465A /* 480h@2x.png */,
+				085FDF4E18D7173900F3465A /* 568h@2x.png */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		08FA77FE18A28E4800097C6E = {
 			isa = PBXGroup;
 			children = (
-				08FA785018A291D200097C6E /* Default-568h@2x.png */,
 				08FA781018A28E4800097C6E /* Fysikkformler */,
 				08FA782F18A28E4900097C6E /* FysikkformlerTests */,
 				08FA780918A28E4800097C6E /* Frameworks */,
@@ -344,6 +375,7 @@
 				08FA785818A2938300097C6E /* View Controllers */,
 				08FA786118A2938300097C6E /* Repos */,
 				08FA78C518A2938400097C6E /* Assets */,
+				085FDF5118D717A600F3465A /* Images.xcassets */,
 				08FA784518A28FC300097C6E /* Supporting Files */,
 			);
 			path = Fysikkformler;
@@ -386,6 +418,8 @@
 			children = (
 				08FA785318A2938300097C6E /* Formel.h */,
 				08FA785418A2938300097C6E /* Formel.m */,
+				085FDF4918D7066200F3465A /* Singleton.h */,
+				085FDF4A18D7066200F3465A /* Singleton.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -395,6 +429,7 @@
 			children = (
 				08FA785618A2938300097C6E /* FormelCell.xib */,
 				08FA785718A2938300097C6E /* iPhone.storyboard */,
+				08AD07CB18D6F5810037DC80 /* MenuCell.xib */,
 			);
 			path = "User Interfaces";
 			sourceTree = "<group>";
@@ -402,8 +437,7 @@
 		08FA785818A2938300097C6E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				08FA785918A2938300097C6E /* FormelCell.h */,
-				08FA785A18A2938300097C6E /* FormelCell.m */,
+				0815C0A318D6F48A00DF9630 /* Cells */,
 				08FA785B18A2938300097C6E /* FormelViewController.h */,
 				08FA785C18A2938300097C6E /* FormelViewController.m */,
 				08FA785D18A2938300097C6E /* InfoViewViewController.h */,
@@ -443,6 +477,7 @@
 		08FA78C518A2938400097C6E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				085FDF4C18D7173900F3465A /* Launch */,
 				08395E7718A9641400CDCDFC /* Ikoner */,
 				08FA78C618A2938400097C6E /* atomcloud-grey.png */,
 			);
@@ -762,10 +797,12 @@
 				FF0AA6FA18AAD2B800234245 /* s2.pdf in Resources */,
 				FF0AA6CF18AAD2B800234245 /* λ2.pdf in Resources */,
 				08395E8918A9641400CDCDFC /* Icon-76.png in Resources */,
+				085FDF4F18D7173900F3465A /* 480h@2x.png in Resources */,
 				FF0AA6FE18AAD2B800234245 /* \u03C11.pdf in Resources */,
 				FF0AA70318AAD2B800234245 /* t3.pdf in Resources */,
 				FF0AA6C718AAD2B800234245 /* a3Snudd.pdf in Resources */,
 				08FA78DC18A2938400097C6E /* LICENSE.txt in Resources */,
+				085FDF5218D717A600F3465A /* Images.xcassets in Resources */,
 				FF0AA6D118AAD2B800234245 /* λ3.pdf in Resources */,
 				FF0AA6CE18AAD2B800234245 /* λ1Snudd.pdf in Resources */,
 				08FA78D618A2938400097C6E /* FormelCell.xib in Resources */,
@@ -789,7 +826,6 @@
 				FF0AA6D518AAD2B800234245 /* E1.pdf in Resources */,
 				FF0AA6DB18AAD2B800234245 /* v2.pdf in Resources */,
 				FF0AA6EF18AAD2B800234245 /* m1Snudd.pdf in Resources */,
-				08FA785118A291D200097C6E /* Default-568h@2x.png in Resources */,
 				FF0AA70018AAD2B800234245 /* t1Snudd.pdf in Resources */,
 				FF0AA6D918AAD2B800234245 /* E4.pdf in Resources */,
 				FF0AA6D818AAD2B800234245 /* E3.pdf in Resources */,
@@ -812,6 +848,7 @@
 				FF0AA6C818AAD2B800234245 /* a4.pdf in Resources */,
 				FF0AA70118AAD2B800234245 /* t2.pdf in Resources */,
 				FF0AA6E718AAD2B800234245 /* R1Snudd.pdf in Resources */,
+				085FDF5018D7173900F3465A /* 568h@2x.png in Resources */,
 				FF0AA6D218AAD2B800234245 /* λ3Snudd.pdf in Resources */,
 				FF0AA6C218AAD2B800234245 /* a1.pdf in Resources */,
 				FF0AA6C418AAD2B800234245 /* a2.pdf in Resources */,
@@ -828,6 +865,7 @@
 				08395E8F18A9641400CDCDFC /* Icon-Small@2x.png in Resources */,
 				FF0AA6CC18AAD2B800234245 /* W2.pdf in Resources */,
 				08395E9118A9641400CDCDFC /* Icon@2x.png in Resources */,
+				08AD07CC18D6F5810037DC80 /* MenuCell.xib in Resources */,
 				FF0AA70418AAD2B800234245 /* t3Snudd.pdf in Resources */,
 				08FA78D718A2938400097C6E /* iPhone.storyboard in Resources */,
 				FF0AA70518AAD2B800234245 /* t4.pdf in Resources */,
@@ -857,7 +895,9 @@
 				08FA78E118A2938400097C6E /* UIView+Image.m in Sources */,
 				08FA78DE18A2938400097C6E /* NSString+MD5.m in Sources */,
 				08FA78DD18A2938400097C6E /* NSData+MD5.m in Sources */,
+				085FDF4B18D7066200F3465A /* Singleton.m in Sources */,
 				08FA78DF18A2938400097C6E /* PDFView.m in Sources */,
+				0815C0A218D6F48300DF9630 /* MenuCell.m in Sources */,
 				08FA78DB18A2938400097C6E /* StartViewController.m in Sources */,
 				08FA78DA18A2938400097C6E /* InfoViewViewController.m in Sources */,
 				08FA78D518A2938400097C6E /* Formel.m in Sources */,
@@ -968,6 +1008,8 @@
 		08FA783A18A28E4900097C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -982,6 +1024,8 @@
 		08FA783B18A28E4900097C6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

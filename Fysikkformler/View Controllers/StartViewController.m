@@ -9,10 +9,13 @@
 #import "StartViewController.h"
 #import "FormelViewController.h"
 #import "InfoViewViewController.h"
-@interface StartViewController () <UIScrollViewDelegate>
+#import "MenuCell.h"
+#import "Singleton.h"
 
-@property (strong) NSDictionary *allTypes;
+@interface StartViewController () <UITableViewDataSource,UITableViewDelegate>
 
+@property (strong) NSArray *menuObjects;
+@property (strong, nonatomic) IBOutlet UITableView *menuTableView;
 @end
 
 @implementation StartViewController
@@ -25,77 +28,107 @@
     self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    [btn addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-    self.allTypes = @{@"a":@"Akselerasjon",
-                      @"W":@"Arbeid",
-                      @"\u03BB":@"Bølgelengde",
-                      @"P":@"Effekt",
-                      @"E":@"Energi",
-                      @"v":@"Fart",
-                      @"f":@"Frekvens",
-                      @"R":@"Friksjon",
-                      @"Ek":@"Kinetisk energi",
-                      @"m":@"Masse",
-                      @"Ep":@"Potensiell energi",
-                      @"s":@"Strekning",
-                      @"\u03C1":@"Massetetthet",
-                      @"t":@"Tid",
-                      @"p":@"Trykk",
-                      //@"F":@"Krefter",
-                      @"V":@"Volum", //vi har ingen vei videre ennå
-                      //@"Q":@"Varme",
-                      };
-    
-    int spacing = 2;
-    NSArray *sortedKeys = [self.allTypes.allKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 65, 320, 503)];
-    scrollView.contentSize = CGSizeMake(320, ((self.allTypes.allValues.count*80)+sortedKeys.count*spacing));
-    scrollView.delegate = self;
-    
-    for (int i = 0; i<sortedKeys.count; i++) {
-        
-        UIControl *unitControl = [[UIControl alloc]init];
-        [unitControl setFrame:CGRectMake(2, (i*80+2)+i*spacing, self.view.frame.size.width-4, 80)];
-       
-        
-        UILabel *unitLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,0, 80, 80)];
-        unitLabel.font = [UIFont fontWithName:THIN size:60.0f];
-        unitLabel.textColor = [UIColor colorWithWhite:0.4f alpha:1];
-        unitLabel.textAlignment = NSTextAlignmentCenter;
-        unitLabel.text = [sortedKeys objectAtIndex:i];
-        
-        UILabel *unitTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(80, 30, 200, 25)];
-        unitTextLabel.font = [UIFont fontWithName:LIGHT size:20.0f];
-        unitTextLabel.text = [self.allTypes objectForKey:unitLabel.text];
-        unitTextLabel.textAlignment = NSTextAlignmentLeft;
-        unitTextLabel.backgroundColor = [UIColor clearColor];
-       
-        
-        [unitControl setBackgroundColor:[UIColor colorWithWhite:0.98f alpha:1]];
-        [unitControl addSubview:unitTextLabel];
-        [unitControl addSubview:unitLabel];
-        [unitControl addTarget:self action:@selector(unitTouchedUpInside:) forControlEvents:UIControlEventTouchUpInside];
-        [scrollView addSubview:unitControl];
-
-    }
-    
-    UIView *whiteBackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, scrollView.contentSize.width, scrollView.contentSize.height)];
-    whiteBackView.backgroundColor = [UIColor whiteColor];
-    
-    [scrollView addSubview:whiteBackView];
-    [scrollView sendSubviewToBack:whiteBackView];
-    
-    [self.view addSubview:scrollView];
-    [self.view bringSubviewToFront:scrollView];
+    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [infoButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
    
+    //Manuell JSON Below
+    {self.menuObjects = @[
+                         @{@"symbol": @"a",
+                           @"name":@"Akselerasjon",
+                           @"filepre":@"a"},
+                         
+                         @{@"symbol": @"W",
+                           @"name":@"Arbeid",
+                           @"filepre":@"W"},
+                         
+                         @{@"symbol":@"λ",
+                           @"name":@"Bølgelengde",
+                           @"filepre":@"b"},
+                         
+                         @{@"symbol":@"P",
+                           @"name":@"Effekt",
+                           @"filepre":@"P"},
+                         
+                         @{@"symbol":@"E",
+                           @"name":@"Energi",
+                           @"filepre":@"E"},
+                         
+                         @{@"symbol":@"v",
+                           @"name":@"Fart",
+                           @"filepre":@"v"},
+                         
+                         @{@"symbol":@"f",
+                           @"name":@"Frekvens",
+                           @"filepre":@"f"},
+                         
+                         @{@"symbol":@"R",
+                           @"name":@"Friksjon",
+                           @"filepre":@"R"},
+                         
+                         @{@"symbol":@"I",
+                           @"name":@"Intensitet (Stjerner)",
+                           @"filepre":@"I"},
+                         
+                         @{@"symbol":@"Ek",
+                           @"name":@"Kinetisk Energi",
+                           @"filepre":@"Ek"},
+                         
+                         @{@"symbol":@"Q",
+                           @"name":@"Ladning",
+                           @"filepre":@"L"},
+                         
+                         @{@"symbol":@"m",
+                           @"name":@"Masse",
+                           @"filepre":@"m"},
+                         
+                         @{@"symbol":@"Ep",
+                           @"name":@"Potensiell Energi",
+                           @"filepre":@"Ep"},
+                         
+                         @{@"symbol":@"R",
+                           @"name":@"Resistans",
+                           @"filepre":@"Re"},
+                         
+                         @{@"symbol":@"U",
+                           @"name":@"Spenning",
+                           @"filepre":@"Us"},
+                         
+                         @{@"symbol":@"s",
+                           @"name":@"Strekning",
+                           @"filepre":@"s"},
+                         
+                         @{@"symbol":@"I",
+                           @"name":@"Strøm",
+                           @"filepre":@"Is"},
+                         
+                         @{@"symbol":@"T",
+                           @"name":@"Temperatur",
+                           @"filepre":@"T"},
+                         
+                         @{@"symbol":@"\u03C1",
+                           @"name":@"Tetthet",
+                           @"filepre":@"rho"},
+                         
+                         @{@"symbol":@"t",
+                           @"name":@"Tid",
+                           @"filepre":@"t"},
+                         
+                         @{@"symbol":@"p",
+                           @"name":@"Trykk",
+                           @"filepre":@"p"},
+                         
+                         @{@"symbol":@"U",
+                           @"name":@"Utstrålingstetthet",
+                           @"filepre":@"U"},
+                         ];}
+    
+    [Singleton sharedData].menuObjects = self.menuObjects;
+    
+    [self.menuTableView registerNib:[UINib nibWithNibName:@"MenuCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"MenuCell"];
+
     
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -105,18 +138,35 @@
     [self performSegueWithIdentifier:@"InfoViewSegue" sender:self];
     
 }
--(void)unitTouchedUpInside:(id)sender{
-    UIControl *touchedControl = (UIControl*)sender;
-    
-    NSString *unitString = [(UILabel*)[touchedControl.subviews objectAtIndex:1] text];
-    
-    FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
-    formelView.currentUnit = unitString;
-    formelView.allTypes = self.allTypes;
-    
-    [self.navigationController pushViewController:formelView animated:YES];
-    
+
+#pragma mark - TableView
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
 }
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.menuObjects.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    FormelViewController *formelVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
+    formelVC.currentUnit = [self.menuObjects objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:formelVC animated:YES];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellID = @"MenuCell";
+    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[MenuCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    NSDictionary *dictionary = [self.menuObjects objectAtIndex:indexPath.row];
+    
+    cell.symbolLabel.text = [dictionary objectForKey:@"symbol"];
+    cell.nameLabel.text = [dictionary objectForKey:@"name"];
+    return cell;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

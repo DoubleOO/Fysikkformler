@@ -13,5 +13,4 @@
 @property IBOutlet UIImageView *mainFormulaImageView;
 @property IBOutlet UIImageView *flipFormulaImageView;
 @property NSDictionary *formula;
--(void)setupGestures;
 @end
