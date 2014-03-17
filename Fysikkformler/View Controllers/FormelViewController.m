@@ -17,7 +17,6 @@
 @property UITableView *tableView;
 @property NSMutableArray *allFormulas;
 @property NSMutableArray *currentFormulas;
-@property NSDictionary *contains;
 @end
 
 @implementation FormelViewController
@@ -26,6 +25,8 @@
 {
     [super viewDidLoad];
     NSLog(@"Unit %@",self.currentUnit);
+    
+    /***SETUP***/
     NSString *headerString = [[NSString alloc]initWithFormat:@"%@",[self.currentUnit objectForKey:@"name"]];
     self.navigationItem.title = headerString;
 
@@ -39,7 +40,13 @@
 
     [self.view addGestureRecognizer:lpgr];
     
+    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [infoButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
     
+    
+    
+    /***DATA LOADING***/
     NSString* pathToFile = [[NSBundle mainBundle] pathForResource:@"finito" ofType:@"json"];
     
     NSData *data = [[NSData alloc]initWithContentsOfFile:pathToFile];
@@ -54,10 +61,6 @@
     
     NSMutableArray *formulasForCurrentUnit = [[NSMutableArray alloc]init];
     formulasForCurrentUnit = [currentDictionary objectForKey:@"formulas"];
-    /***BRIDGE CONTAINS TO FILEPRE***/
-    self.contains = @{@"a": @"a",
-                      @"v": @"v",
-                      @"W": @"W"};
     
     
     
@@ -99,11 +102,15 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"FormelCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"FormelCell"];
     [self.view addSubview:self.tableView];
    
-    
-    
-    
-    
 
+
+}
+
+-(void)showInfo{
+    UIViewController *vc = [[UIViewController alloc]init];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 200, 200, 100)];
+    label.text = @"TEST";
+    [vc.view addSubview:label];
 }
 
 -(void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer
@@ -124,8 +131,17 @@
                                                     cancelButtonTitle:nil
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:nil];
+    NSString *buttonTitle;
     for (NSString *title in units) {
-        [actionSheet addButtonWithTitle:title];
+        for (NSDictionary *prop in [Singleton sharedData].menuObjects) {
+            if ([[prop objectForKey:@"filepre"]isEqualToString:title]) {
+                buttonTitle = [prop objectForKey:@"symbol"];
+                [actionSheet addButtonWithTitle:title];
+            }
+        }
+        
+        
+        
     }
     
     [actionSheet addButtonWithTitle:@"Avbryt"];
@@ -134,18 +150,19 @@
     [actionSheet showInView:self.view];
 }
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
     NSString *title =  [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([title isEqualToString:@"Avbryt"]) {
         return;
     }
+    
     NSDictionary *newFormula;
     for (NSDictionary*dict in [Singleton sharedData].menuObjects) {
-        if ([[dict objectForKey:@"symbol"]isEqualToString:[self.contains objectForKey:title]]) {
+        if ([[dict objectForKey:@"symbol"]isEqualToString:title]) {
             newFormula = dict;
             break;
         }
     }
-    
     
     FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
     formelView.currentUnit = newFormula;
