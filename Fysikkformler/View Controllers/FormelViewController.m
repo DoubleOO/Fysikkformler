@@ -17,6 +17,7 @@
 @property UITableView *tableView;
 @property NSMutableArray *allFormulas;
 @property NSMutableArray *currentFormulas;
+@property NSString *currentInfo;
 @end
 
 @implementation FormelViewController
@@ -24,10 +25,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Unit %@",self.currentUnit);
+    NSLog(@"Viewing %@",self.currentUnit);
     
     /***SETUP***/
-    NSString *headerString = [[NSString alloc]initWithFormat:@"%@",[self.currentUnit objectForKey:@"name"]];
+    NSString *headerString = [[NSString alloc]initWithFormat:@"%@",self.currentUnit[@"name"]];
     self.navigationItem.title = headerString;
 
     self.allFormulas = [[NSMutableArray alloc]init];
@@ -45,9 +46,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
     
     
-    
     /***DATA LOADING***/
-    NSString* pathToFile = [[NSBundle mainBundle] pathForResource:@"finito" ofType:@"json"];
+    NSString* pathToFile = [[NSBundle mainBundle] pathForResource:@"formulas" ofType:@"json"];
     
     NSData *data = [[NSData alloc]initWithContentsOfFile:pathToFile];
     NSError *error;
@@ -57,11 +57,10 @@
         NSLog(@"%@",error);
     }
     
-    NSDictionary *currentDictionary = [JSONDict objectForKey:[self.currentUnit objectForKey:@"filepre"]];
+    NSDictionary *currentDictionary = [JSONDict objectForKey:self.currentUnit[@"filepre"]];
+    self.currentInfo = [currentDictionary objectForKey:@"info"];
     
-    NSMutableArray *formulasForCurrentUnit = [[NSMutableArray alloc]init];
-    formulasForCurrentUnit = [currentDictionary objectForKey:@"formulas"];
-    
+    NSMutableArray *formulasForCurrentUnit = [currentDictionary objectForKey:@"formulas"];
     
     
     /***CALCULATING WIDEST PDF***/
@@ -69,13 +68,12 @@
     
     for (int i = 0; i<=formulasForCurrentUnit.count; i++) {
         int num = i+1;
-        NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i.pdf",[self.currentUnit objectForKey:@"filepre"],num];
+        NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i.pdf",self.currentUnit[@"filepre"],num];
         UIImage *originalImage = [UIImage originalSizeImageWithPDFNamed:imageString];
         NSNumber *size = [NSNumber numberWithInt:originalImage.size.width];
-        
         [biggestPDFArray addObject:size];
         
-        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",self.currentUnit,num];
+        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",self.currentUnit[@"filepre"],num];
         UIImage *flipImage = [UIImage originalSizeImageWithPDFNamed:flipImageString];
         NSNumber *flipSize = [NSNumber numberWithInt:flipImage.size.width];
         NSLog(@"%@ %@",flipImageString,imageString);
@@ -90,7 +88,7 @@
     /***MAKING EACH FORMULA***/
     for (int i = 0; i<formulasForCurrentUnit.count; i++) {
         NSDictionary *formulaInDict = [formulasForCurrentUnit objectAtIndex:i];
-        Formel *formel = [[Formel alloc]initWithDict:formulaInDict forChar:[self.currentUnit objectForKey:@"filepre"] andNumber:i+1 scaleBy:scaleBy];
+        Formel *formel = [[Formel alloc]initWithDict:formulaInDict forChar:self.currentUnit[@"filepre"] andNumber:i+1 scaleBy:scaleBy];
         [self.allFormulas addObject:formel];
     }
     
@@ -107,10 +105,8 @@
 }
 
 -(void)showInfo{
-    UIViewController *vc = [[UIViewController alloc]init];
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 200, 200, 100)];
-    label.text = @"TEST";
-    [vc.view addSubview:label];
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Info" message:self.currentInfo delegate:nil cancelButtonTitle:@"Ferdig" otherButtonTitles:nil];
+    [alertView show];
 }
 
 -(void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer
@@ -132,21 +128,24 @@
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:nil];
     NSString *buttonTitle;
+    int i = 0;
     for (NSString *title in units) {
         for (NSDictionary *prop in [Singleton sharedData].menuObjects) {
             if ([[prop objectForKey:@"filepre"]isEqualToString:title]) {
                 buttonTitle = [prop objectForKey:@"symbol"];
-                [actionSheet addButtonWithTitle:title];
+                [actionSheet addButtonWithTitle:buttonTitle];
+                i++;
             }
         }
-        
-        
-        
+    }
+    if (!i) {
+        return;
     }
     
     [actionSheet addButtonWithTitle:@"Avbryt"];
-    actionSheet.cancelButtonIndex = units.count;
+    actionSheet.cancelButtonIndex = i;
     
+    NSLog(@"%@",actionSheet);
     [actionSheet showInView:self.view];
 }
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -169,6 +168,8 @@
     [self.navigationController pushViewController:formelView animated:YES];
 
 }
+
+#pragma mark - tableview
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150.0f;
 }
@@ -178,6 +179,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.allFormulas.count;
 }
+
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellID = @"FormelCell";

@@ -15,7 +15,7 @@
     {
         //NOTE
         NSString *note = [dictionary objectForKey:@"note"];
-        if ([note isEqualToString:@"-"]) {
+        if ([note isEqualToString:@"<#note#>"]) {
             note = @"";
         }
         self.note = note;

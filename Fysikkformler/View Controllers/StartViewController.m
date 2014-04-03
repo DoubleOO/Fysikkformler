@@ -12,7 +12,7 @@
 #import "MenuCell.h"
 #import "Singleton.h"
 
-@interface StartViewController () <UITableViewDataSource,UITableViewDelegate>
+@interface StartViewController () <UITableViewDataSource,UITableViewDelegate,UINavigationControllerDelegate>
 
 @property (strong) NSArray *menuObjects;
 @property (strong, nonatomic) IBOutlet UITableView *menuTableView;
@@ -27,6 +27,7 @@
     self.navigationItem.title = @"Velg enhet";
     self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.delegate = self;
     
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
@@ -131,6 +132,12 @@
 
     
 }
+
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (viewController == self) {
+        [self.menuTableView deselectRowAtIndexPath:[self.menuTableView indexPathForSelectedRow] animated:YES];
+    }
+}
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 }
@@ -150,7 +157,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     FormelViewController *formelVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
     formelVC.currentUnit = [self.menuObjects objectAtIndex:indexPath.row];
-    
     [self.navigationController pushViewController:formelVC animated:YES];
 }
 
