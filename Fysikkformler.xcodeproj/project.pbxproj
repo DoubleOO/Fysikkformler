@@ -26,15 +26,6 @@
 		085FDF5018D7173900F3465A /* 568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4E18D7173900F3465A /* 568h@2x.png */; };
 		085FDF5218D717A600F3465A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF5118D717A600F3465A /* Images.xcassets */; };
 		0865993A18E9B8DC004500FD /* formulas.json in Resources */ = {isa = PBXBuildFile; fileRef = 0865993918E9B8DC004500FD /* formulas.json */; };
-		08A70A2B18F565D80061691A /* a1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B118F565D80061691A /* a1.pdf */; };
-		08A70A2C18F565D80061691A /* a1snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B218F565D80061691A /* a1snudd.pdf */; };
-		08A70A2D18F565D80061691A /* a2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B318F565D80061691A /* a2.pdf */; };
-		08A70A2E18F565D80061691A /* a2snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B418F565D80061691A /* a2snudd.pdf */; };
-		08A70A2F18F565D80061691A /* a3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B518F565D80061691A /* a3.pdf */; };
-		08A70A3018F565D80061691A /* a3snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B618F565D80061691A /* a3snudd.pdf */; };
-		08A70A3118F565D80061691A /* a4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B718F565D80061691A /* a4.pdf */; };
-		08A70A3218F565D80061691A /* a4snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B818F565D80061691A /* a4snudd.pdf */; };
-		08A70A3318F565D80061691A /* a5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709B918F565D80061691A /* a5.pdf */; };
 		08A70A3418F565D80061691A /* W1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709BB18F565D80061691A /* W1.pdf */; };
 		08A70A3518F565D80061691A /* W2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709BC18F565D80061691A /* W2.pdf */; };
 		08A70A3618F565D80061691A /* W3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 08A709BD18F565D80061691A /* W3.pdf */; };
@@ -154,6 +145,15 @@
 		08FA78E018A2938400097C6E /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786B18A2938300097C6E /* UIImage+PDF.m */; };
 		08FA78E118A2938400097C6E /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786D18A2938300097C6E /* UIView+Image.m */; };
 		08FA792818A2938400097C6E /* atomcloud-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C618A2938400097C6E /* atomcloud-grey.png */; };
+		FF8DD82718F56DDE00CD62C5 /* a1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD81E18F56DDE00CD62C5 /* a1.pdf */; };
+		FF8DD82818F56DDE00CD62C5 /* a1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD81F18F56DDE00CD62C5 /* a1Snudd.pdf */; };
+		FF8DD82918F56DDE00CD62C5 /* a2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82018F56DDE00CD62C5 /* a2.pdf */; };
+		FF8DD82A18F56DDE00CD62C5 /* a2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82118F56DDE00CD62C5 /* a2Snudd.pdf */; };
+		FF8DD82B18F56DDE00CD62C5 /* a3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82218F56DDE00CD62C5 /* a3.pdf */; };
+		FF8DD82C18F56DDE00CD62C5 /* a3Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82318F56DDE00CD62C5 /* a3Snudd.pdf */; };
+		FF8DD82D18F56DDE00CD62C5 /* a4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82418F56DDE00CD62C5 /* a4.pdf */; };
+		FF8DD82E18F56DDE00CD62C5 /* a4Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82518F56DDE00CD62C5 /* a4Snudd.pdf */; };
+		FF8DD82F18F56DDE00CD62C5 /* a5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF8DD82618F56DDE00CD62C5 /* a5.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,15 +188,6 @@
 		085FDF4E18D7173900F3465A /* 568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "568h@2x.png"; sourceTree = "<group>"; };
 		085FDF5118D717A600F3465A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0865993918E9B8DC004500FD /* formulas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = formulas.json; sourceTree = "<group>"; };
-		08A709B118F565D80061691A /* a1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1.pdf; sourceTree = "<group>"; };
-		08A709B218F565D80061691A /* a1snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1snudd.pdf; sourceTree = "<group>"; };
-		08A709B318F565D80061691A /* a2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2.pdf; sourceTree = "<group>"; };
-		08A709B418F565D80061691A /* a2snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2snudd.pdf; sourceTree = "<group>"; };
-		08A709B518F565D80061691A /* a3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3.pdf; sourceTree = "<group>"; };
-		08A709B618F565D80061691A /* a3snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3snudd.pdf; sourceTree = "<group>"; };
-		08A709B718F565D80061691A /* a4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4.pdf; sourceTree = "<group>"; };
-		08A709B818F565D80061691A /* a4snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4snudd.pdf; sourceTree = "<group>"; };
-		08A709B918F565D80061691A /* a5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a5.pdf; sourceTree = "<group>"; };
 		08A709BB18F565D80061691A /* W1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = W1.pdf; sourceTree = "<group>"; };
 		08A709BC18F565D80061691A /* W2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = W2.pdf; sourceTree = "<group>"; };
 		08A709BD18F565D80061691A /* W3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = W3.pdf; sourceTree = "<group>"; };
@@ -330,6 +321,15 @@
 		08FA786C18A2938300097C6E /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		08FA786D18A2938300097C6E /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		08FA78C618A2938400097C6E /* atomcloud-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atomcloud-grey.png"; sourceTree = "<group>"; };
+		FF8DD81E18F56DDE00CD62C5 /* a1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1.pdf; sourceTree = "<group>"; };
+		FF8DD81F18F56DDE00CD62C5 /* a1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1Snudd.pdf; sourceTree = "<group>"; };
+		FF8DD82018F56DDE00CD62C5 /* a2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2.pdf; sourceTree = "<group>"; };
+		FF8DD82118F56DDE00CD62C5 /* a2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2Snudd.pdf; sourceTree = "<group>"; };
+		FF8DD82218F56DDE00CD62C5 /* a3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3.pdf; sourceTree = "<group>"; };
+		FF8DD82318F56DDE00CD62C5 /* a3Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a3Snudd.pdf; sourceTree = "<group>"; };
+		FF8DD82418F56DDE00CD62C5 /* a4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4.pdf; sourceTree = "<group>"; };
+		FF8DD82518F56DDE00CD62C5 /* a4Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a4Snudd.pdf; sourceTree = "<group>"; };
+		FF8DD82618F56DDE00CD62C5 /* a5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a5.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,7 +400,7 @@
 		08A709AF18F565D80061691A /* FormelPDF */ = {
 			isa = PBXGroup;
 			children = (
-				08A709B018F565D80061691A /* Akselerasjon */,
+				FF8DD81D18F56DDE00CD62C5 /* Akselerasjon */,
 				08A709BA18F565D80061691A /* Arbeid */,
 				08A709C218F565D80061691A /* Bølgelengde */,
 				08A709C918F565D80061691A /* Effekt */,
@@ -424,22 +424,6 @@
 				08A70A2818F565D80061691A /* Utstrålingstetthet */,
 			);
 			path = FormelPDF;
-			sourceTree = "<group>";
-		};
-		08A709B018F565D80061691A /* Akselerasjon */ = {
-			isa = PBXGroup;
-			children = (
-				08A709B118F565D80061691A /* a1.pdf */,
-				08A709B218F565D80061691A /* a1snudd.pdf */,
-				08A709B318F565D80061691A /* a2.pdf */,
-				08A709B418F565D80061691A /* a2snudd.pdf */,
-				08A709B518F565D80061691A /* a3.pdf */,
-				08A709B618F565D80061691A /* a3snudd.pdf */,
-				08A709B718F565D80061691A /* a4.pdf */,
-				08A709B818F565D80061691A /* a4snudd.pdf */,
-				08A709B918F565D80061691A /* a5.pdf */,
-			);
-			path = Akselerasjon;
 			sourceTree = "<group>";
 		};
 		08A709BA18F565D80061691A /* Arbeid */ = {
@@ -839,6 +823,22 @@
 			path = Formulas;
 			sourceTree = "<group>";
 		};
+		FF8DD81D18F56DDE00CD62C5 /* Akselerasjon */ = {
+			isa = PBXGroup;
+			children = (
+				FF8DD81E18F56DDE00CD62C5 /* a1.pdf */,
+				FF8DD81F18F56DDE00CD62C5 /* a1Snudd.pdf */,
+				FF8DD82018F56DDE00CD62C5 /* a2.pdf */,
+				FF8DD82118F56DDE00CD62C5 /* a2Snudd.pdf */,
+				FF8DD82218F56DDE00CD62C5 /* a3.pdf */,
+				FF8DD82318F56DDE00CD62C5 /* a3Snudd.pdf */,
+				FF8DD82418F56DDE00CD62C5 /* a4.pdf */,
+				FF8DD82518F56DDE00CD62C5 /* a4Snudd.pdf */,
+				FF8DD82618F56DDE00CD62C5 /* a5.pdf */,
+			);
+			path = Akselerasjon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -936,7 +936,6 @@
 				08A70A8218F565D80061691A /* T3.pdf in Resources */,
 				08A70A5718F565D80061691A /* f3.pdf in Resources */,
 				08A70A5A18F565D80061691A /* R2.pdf in Resources */,
-				08A70A2E18F565D80061691A /* a2snudd.pdf in Resources */,
 				08FA792818A2938400097C6E /* atomcloud-grey.png in Resources */,
 				08A70A4718F565D80061691A /* E1Snudd.pdf in Resources */,
 				08A70A4618F565D80061691A /* E1.pdf in Resources */,
@@ -946,22 +945,21 @@
 				08A70A3418F565D80061691A /* W1.pdf in Resources */,
 				08A70A6A18F565D80061691A /* m3Snudd.pdf in Resources */,
 				08A70A5F18F565D80061691A /* Ek1.pdf in Resources */,
-				08A70A2C18F565D80061691A /* a1snudd.pdf in Resources */,
-				08A70A3318F565D80061691A /* a5.pdf in Resources */,
 				08A70A8418F565D80061691A /* t1.pdf in Resources */,
 				08395E8918A9641400CDCDFC /* Icon-76.png in Resources */,
 				08A70A7818F565D80061691A /* s4.pdf in Resources */,
 				08A70A3718F565D80061691A /* W3Snudd.pdf in Resources */,
 				085FDF4F18D7173900F3465A /* 480h@2x.png in Resources */,
-				08A70A3018F565D80061691A /* a3snudd.pdf in Resources */,
 				08FA78DC18A2938400097C6E /* LICENSE.txt in Resources */,
 				08A70A6818F565D80061691A /* m2Snudd.pdf in Resources */,
-				08A70A3218F565D80061691A /* a4snudd.pdf in Resources */,
 				08A70A3A18F565D80061691A /* W6.pdf in Resources */,
 				08A70A4518F565D80061691A /* P5.pdf in Resources */,
+				FF8DD82F18F56DDE00CD62C5 /* a5.pdf in Resources */,
 				08A70A8F18F565D80061691A /* U2.pdf in Resources */,
+				FF8DD82C18F56DDE00CD62C5 /* a3Snudd.pdf in Resources */,
 				08A70A8D18F565D80061691A /* p.pdf in Resources */,
 				08A70A7C18F565D80061691A /* Is2.pdf in Resources */,
+				FF8DD82E18F56DDE00CD62C5 /* a4Snudd.pdf in Resources */,
 				08A70A5218F565D80061691A /* v7.pdf in Resources */,
 				08A70A5518F565D80061691A /* f1.pdf in Resources */,
 				08A70A8E18F565D80061691A /* U1.pdf in Resources */,
@@ -974,11 +972,15 @@
 				08A70A6D18F565D80061691A /* Ep1.pdf in Resources */,
 				08FA78D618A2938400097C6E /* FormelCell.xib in Resources */,
 				0865993A18E9B8DC004500FD /* formulas.json in Resources */,
-				08A70A2F18F565D80061691A /* a3.pdf in Resources */,
 				08A70A4018F565D80061691A /* b3Snudd.pdf in Resources */,
+				FF8DD82718F56DDE00CD62C5 /* a1.pdf in Resources */,
 				08A70A5318F565D80061691A /* v8.pdf in Resources */,
+				FF8DD82D18F56DDE00CD62C5 /* a4.pdf in Resources */,
 				08A70A3C18F565D80061691A /* b1Snudd.pdf in Resources */,
+				FF8DD82A18F56DDE00CD62C5 /* a2Snudd.pdf in Resources */,
 				08A70A7318F565D80061691A /* Us3.pdf in Resources */,
+				FF8DD82818F56DDE00CD62C5 /* a1Snudd.pdf in Resources */,
+				FF8DD82B18F56DDE00CD62C5 /* a3.pdf in Resources */,
 				08A70A3F18F565D80061691A /* b3.pdf in Resources */,
 				08395E8B18A9641400CDCDFC /* Icon-Med-40@2x.png in Resources */,
 				08A70A8718F565D80061691A /* t2Snudd.pdf in Resources */,
@@ -988,7 +990,6 @@
 				08A70A5818F565D80061691A /* R1.pdf in Resources */,
 				08395E8E18A9641400CDCDFC /* Icon-Small.png in Resources */,
 				08A70A5618F565D80061691A /* f2.pdf in Resources */,
-				08A70A2D18F565D80061691A /* a2.pdf in Resources */,
 				08A70A7E18F565D80061691A /* Is3Snudd.pdf in Resources */,
 				08A70A6918F565D80061691A /* m3.pdf in Resources */,
 				08A70A6418F565D80061691A /* L3.pdf in Resources */,
@@ -1017,7 +1018,6 @@
 				08A70A6218F565D80061691A /* L1.pdf in Resources */,
 				08A70A5B18F565D80061691A /* R2Snudd.pdf in Resources */,
 				08A70A4318F565D80061691A /* P3.pdf in Resources */,
-				08A70A2B18F565D80061691A /* a1.pdf in Resources */,
 				08A70A6318F565D80061691A /* L2.pdf in Resources */,
 				08A70A6018F565D80061691A /* Ek2.pdf in Resources */,
 				08A70A6C18F565D80061691A /* m4Snudd.pdf in Resources */,
@@ -1029,11 +1029,11 @@
 				08A70A5E18F565D80061691A /* I2.pdf in Resources */,
 				08FA784E18A28FC300097C6E /* InfoPlist.strings in Resources */,
 				08A70A8618F565D80061691A /* t2.pdf in Resources */,
+				FF8DD82918F56DDE00CD62C5 /* a2.pdf in Resources */,
 				08A70A5C18F565D80061691A /* R3.pdf in Resources */,
 				08A70A8018F565D80061691A /* T2.pdf in Resources */,
 				08A70A8C18F565D80061691A /* t6.pdf in Resources */,
 				08A70A7A18F565D80061691A /* Is1.pdf in Resources */,
-				08A70A3118F565D80061691A /* a4.pdf in Resources */,
 				08A70A4A18F565D80061691A /* E4.pdf in Resources */,
 				08A70A3518F565D80061691A /* W2.pdf in Resources */,
 				08A70A6618F565D80061691A /* m1Snudd.pdf in Resources */,

@@ -1,6 +1,6 @@
 {
     "a":{
-        "info":"Benevningen er distanse/tid^2\nDer det er relevant, er lysfarten 3.0 * 10^8 m/s",
+        "info":"Benevningen er distanse/tid^2 \n m/s^2",
         "formulas":[
                     {
                     "contains":[
@@ -60,7 +60,7 @@
                     {
                     "contains":[
                                 "Us",
-                                "Q"
+                                "L"
                                 ],
                     "note":"<#note#>"
                     },
@@ -355,7 +355,7 @@
                     }
                     ]
     },
-    "Q":{
+    "L":{
         "info":"<#INFO#>",
         "formulas":[
                     {
