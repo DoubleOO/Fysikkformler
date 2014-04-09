@@ -196,7 +196,10 @@
     cell.noteLabel.text = formel.note;
     cell.mainFormulaImageView.image = formel.mainFormelImage;
     cell.flipFormulaImageView.image = formel.flipFormelImage;
-    cell.flipFormulaImageView.hidden = YES;
+    
+    if (!cell.mainFormulaImageView.hidden && !cell.flipFormulaImageView.hidden) {
+        cell.flipFormulaImageView.hidden = YES;
+    }
     NSLog(@"%@ %@",NSStringFromCGSize(cell.mainFormulaImageView.image.size),NSStringFromCGSize(cell.flipFormulaImageView.image.size));
     return cell;
 
@@ -216,6 +219,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
+
 
 - (void)didReceiveMemoryWarning
 {
