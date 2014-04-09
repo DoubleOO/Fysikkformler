@@ -18,6 +18,7 @@
 @property NSMutableArray *allFormulas;
 @property NSMutableArray *currentFormulas;
 @property NSString *currentInfo;
+@property NSMutableArray *actionSheetOptions;
 @end
 
 @implementation FormelViewController
@@ -26,7 +27,7 @@
 {
     [super viewDidLoad];
     NSLog(@"Viewing %@",self.currentUnit);
-    
+    self.actionSheetOptions = [[NSMutableArray alloc]init];
     /***SETUP***/
     NSString *headerString = [[NSString alloc]initWithFormat:@"%@",self.currentUnit[@"name"]];
     self.navigationItem.title = headerString;
@@ -128,12 +129,15 @@
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:nil];
     NSString *buttonTitle;
+    
+    
     int i = 0;
     for (NSString *title in units) {
         for (NSDictionary *prop in [Singleton sharedData].menuObjects) {
             if ([[prop objectForKey:@"filepre"]isEqualToString:title]) {
                 buttonTitle = [prop objectForKey:@"symbol"];
                 [actionSheet addButtonWithTitle:buttonTitle];
+                [self.actionSheetOptions addObject:prop];
                 i++;
             }
         }
@@ -150,18 +154,12 @@
 }
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
-    NSString *title =  [actionSheet buttonTitleAtIndex:buttonIndex];
-    if ([title isEqualToString:@"Avbryt"]) {
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        self.actionSheetOptions = nil;
         return;
     }
     
-    NSDictionary *newFormula;
-    for (NSDictionary*dict in [Singleton sharedData].menuObjects) {
-        if ([[dict objectForKey:@"symbol"]isEqualToString:title]) {
-            newFormula = dict;
-            break;
-        }
-    }
+    NSDictionary *newFormula = [self.actionSheetOptions objectAtIndex:buttonIndex];
     
     FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
     formelView.currentUnit = newFormula;
@@ -199,6 +197,7 @@
     cell.mainFormulaImageView.image = formel.mainFormelImage;
     cell.flipFormulaImageView.image = formel.flipFormelImage;
     cell.flipFormulaImageView.hidden = YES;
+    NSLog(@"%@ %@",NSStringFromCGSize(cell.mainFormulaImageView.image.size),NSStringFromCGSize(cell.flipFormulaImageView.image.size));
     return cell;
 
 }
@@ -215,7 +214,6 @@
         formelCell.flipFormulaImageView.hidden = NO;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
     
 }
 
