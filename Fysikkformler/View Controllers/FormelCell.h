@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Formel.h"
 @interface FormelCell : UITableViewCell
 @property IBOutlet UILabel *noteLabel;
 @property IBOutlet UIImageView *mainFormulaImageView;
 @property IBOutlet UIImageView *flipFormulaImageView;
-@property NSDictionary *formula;
+@property (strong, retain) Formel *formula;
 @end

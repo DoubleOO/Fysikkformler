@@ -11,10 +11,11 @@
 #import "Formel.h"
 #import "UIImage+PDF.h"
 #import "Singleton.h"
+#import <ImageIO/ImageIO.h>
 
 
 @interface FormelViewController ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate,UIActionSheetDelegate>
-@property UITableView *tableView;
+@property IBOutlet UITableView *tableView;
 @property NSMutableArray *allFormulas;
 @property NSMutableArray *currentFormulas;
 @property NSString *currentInfo;
@@ -28,6 +29,7 @@
     [super viewDidLoad];
     NSLog(@"Viewing %@",self.currentUnit);
     self.actionSheetOptions = [[NSMutableArray alloc]init];
+   
     /***SETUP***/
     NSString *headerString = [[NSString alloc]initWithFormat:@"%@",self.currentUnit[@"name"]];
     self.navigationItem.title = headerString;
@@ -48,20 +50,22 @@
     
     
     /***DATA LOADING***/
-    NSString* pathToFile = [[NSBundle mainBundle] pathForResource:@"formulas" ofType:@"json"];
     
-    NSData *data = [[NSData alloc]initWithContentsOfFile:pathToFile];
-    NSError *error;
-    NSDictionary * JSONDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    
-    if (error) {
-        NSLog(@"%@",error);
+    if (![Singleton sharedData].JSONDict) {
+        NSString* pathToFile = [[NSBundle mainBundle] pathForResource:@"formulas" ofType:@"json"];
+        
+        NSData *data = [[NSData alloc]initWithContentsOfFile:pathToFile];
+        NSError *error;
+        NSDictionary * JSONDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        
+        if(error){NSLog(@"%@",error);}
+        [Singleton sharedData].JSONDict = JSONDict;
     }
     
-    NSDictionary *currentDictionary = [JSONDict objectForKey:self.currentUnit[@"filepre"]];
+    NSDictionary *currentDictionary = [Singleton sharedData].JSONDict[self.currentUnit[@"filepre"]];
     self.currentInfo = [currentDictionary objectForKey:@"info"];
     
-    NSMutableArray *formulasForCurrentUnit = [currentDictionary objectForKey:@"formulas"];
+    NSMutableArray *formulasForCurrentUnit = currentDictionary[@"formulas"];
     
     
     /***CALCULATING WIDEST PDF***/
@@ -77,7 +81,6 @@
         NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",self.currentUnit[@"filepre"],num];
         UIImage *flipImage = [UIImage originalSizeImageWithPDFNamed:flipImageString];
         NSNumber *flipSize = [NSNumber numberWithInt:flipImage.size.width];
-        NSLog(@"%@ %@",flipImageString,imageString);
         [biggestPDFArray addObject:flipSize];
 
     }
@@ -93,14 +96,10 @@
         [self.allFormulas addObject:formel];
     }
     
-    
     /***CREATE TABLEVIEW***/
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 65, 320, self.view.frame.size.height-65)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"FormelCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"FormelCell"];
-    [self.view addSubview:self.tableView];
-   
 
 
 }
@@ -118,44 +117,34 @@
     CGPoint point = [gestureRecognizer locationInView:self.tableView];
     
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point];
-    Formel *selectedFormel = [self.allFormulas objectAtIndex:indexPath.row];
-    [self presentActionSheetWithUnits:selectedFormel.contains];
-}
--(void)presentActionSheetWithUnits:(NSArray *)units{
-    
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Solve for.."
+    NSArray *contains = [(FormelCell*)[self.tableView cellForRowAtIndexPath:indexPath] formula].contains;
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Løs for..."
                                                              delegate:self
                                                     cancelButtonTitle:nil
                                                destructiveButtonTitle:nil
                                                     otherButtonTitles:nil];
-    NSString *buttonTitle;
-    
-    
-    int i = 0;
-    for (NSString *title in units) {
-        for (NSDictionary *prop in [Singleton sharedData].menuObjects) {
-            if ([[prop objectForKey:@"filepre"]isEqualToString:title]) {
-                buttonTitle = [prop objectForKey:@"symbol"];
+    for (NSString *filepre in contains) {
+        for (NSDictionary *menuObject in [Singleton sharedData].menuObjects) {
+            if ([filepre isEqualToString:menuObject[@"filepre"]]) {
+                NSString *buttonTitle = menuObject[@"symbol"];
                 [actionSheet addButtonWithTitle:buttonTitle];
-                [self.actionSheetOptions addObject:prop];
-                i++;
+                [self.actionSheetOptions addObject:menuObject];
             }
         }
     }
-    if (!i) {
-        return;
-    }
     
     [actionSheet addButtonWithTitle:@"Avbryt"];
-    actionSheet.cancelButtonIndex = i;
+    actionSheet.cancelButtonIndex = actionSheet.numberOfButtons-1;
     
-    NSLog(@"%@",actionSheet);
     [actionSheet showInView:self.view];
+
 }
+
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"self.options: %@ \n clickedIndex: %ld \n buttonTitle: %@",self.actionSheetOptions,(long)buttonIndex,[actionSheet buttonTitleAtIndex:buttonIndex]);
     
     if (buttonIndex == actionSheet.cancelButtonIndex) {
-        self.actionSheetOptions = nil;
+        [self.actionSheetOptions removeAllObjects];
         return;
     }
     
@@ -187,20 +176,26 @@
         cell = [[FormelCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         
     }
-    
     cell.mainFormulaImageView.contentMode = UIViewContentModeCenter;
     cell.flipFormulaImageView.contentMode = UIViewContentModeCenter;
     [cell setContentMode:UIViewContentModeCenter];
     
     Formel *formel = [self.allFormulas objectAtIndex:indexPath.row];
+    
+    cell.formula = formel;
     cell.noteLabel.text = formel.note;
     cell.mainFormulaImageView.image = formel.mainFormelImage;
     cell.flipFormulaImageView.image = formel.flipFormelImage;
     
+    
     if (!cell.mainFormulaImageView.hidden && !cell.flipFormulaImageView.hidden) {
         cell.flipFormulaImageView.hidden = YES;
     }
-    NSLog(@"%@ %@",NSStringFromCGSize(cell.mainFormulaImageView.image.size),NSStringFromCGSize(cell.flipFormulaImageView.image.size));
+    if (cell.mainFormulaImageView.hidden && cell.flipFormulaImageView.hidden) {
+        cell.flipFormulaImageView.hidden = YES;
+        cell.mainFormulaImageView.hidden = NO;
+    }
+
     return cell;
 
 }

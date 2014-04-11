@@ -25,10 +25,15 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"Velg enhet";
-    self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
+        //iOS 6
+        [self.navigationController.navigationBar setTintColor:RGB(6, 141, 253)];
+    }else{
+        //iOS 7
+        self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    }
     self.navigationController.delegate = self;
-    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
@@ -167,9 +172,11 @@
         cell = [[MenuCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     NSDictionary *dictionary = [self.menuObjects objectAtIndex:indexPath.row];
-    
+
     cell.symbolLabel.text = [dictionary objectForKey:@"symbol"];
     cell.nameLabel.text = [dictionary objectForKey:@"name"];
+    
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){cell.symbolLabel.font = [UIFont fontWithName:LIGHT size:45.0f];}
     return cell;
 }
 

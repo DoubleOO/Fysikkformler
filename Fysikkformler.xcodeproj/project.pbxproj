@@ -21,6 +21,10 @@
 		08395E8F18A9641400CDCDFC /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8218A9641400CDCDFC /* Icon-Small@2x.png */; };
 		08395E9018A9641400CDCDFC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8318A9641400CDCDFC /* Icon.png */; };
 		08395E9118A9641400CDCDFC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08395E8418A9641400CDCDFC /* Icon@2x.png */; };
+		083DBB5C18F7E3A200C7C732 /* 6-480h.png in Resources */ = {isa = PBXBuildFile; fileRef = 083DBB5918F7E3A200C7C732 /* 6-480h.png */; };
+		083DBB5D18F7E3A200C7C732 /* 6-480h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 083DBB5A18F7E3A200C7C732 /* 6-480h@2x.png */; };
+		083DBB5E18F7E3A200C7C732 /* 6-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 083DBB5B18F7E3A200C7C732 /* 6-568h@2x.png */; };
+		083DBB6018F7FEA800C7C732 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083DBB5F18F7FEA800C7C732 /* ImageIO.framework */; };
 		085FDF4B18D7066200F3465A /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FDF4A18D7066200F3465A /* Singleton.m */; };
 		085FDF4F18D7173900F3465A /* 480h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4D18D7173900F3465A /* 480h@2x.png */; };
 		085FDF5018D7173900F3465A /* 568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4E18D7173900F3465A /* 568h@2x.png */; };
@@ -182,6 +186,10 @@
 		08395E8218A9641400CDCDFC /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		08395E8318A9641400CDCDFC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		08395E8418A9641400CDCDFC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		083DBB5918F7E3A200C7C732 /* 6-480h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-480h.png"; sourceTree = "<group>"; };
+		083DBB5A18F7E3A200C7C732 /* 6-480h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-480h@2x.png"; sourceTree = "<group>"; };
+		083DBB5B18F7E3A200C7C732 /* 6-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-568h@2x.png"; sourceTree = "<group>"; };
+		083DBB5F18F7FEA800C7C732 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		085FDF4918D7066200F3465A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		085FDF4A18D7066200F3465A /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		085FDF4D18D7173900F3465A /* 480h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480h@2x.png"; sourceTree = "<group>"; };
@@ -337,6 +345,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083DBB6018F7FEA800C7C732 /* ImageIO.framework in Frameworks */,
 				08FA784418A28F6C00097C6E /* QuartzCore.framework in Frameworks */,
 				08FA780D18A28E4800097C6E /* CoreGraphics.framework in Frameworks */,
 				08FA780F18A28E4800097C6E /* UIKit.framework in Frameworks */,
@@ -391,6 +400,9 @@
 		085FDF4C18D7173900F3465A /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				083DBB5918F7E3A200C7C732 /* 6-480h.png */,
+				083DBB5A18F7E3A200C7C732 /* 6-480h@2x.png */,
+				083DBB5B18F7E3A200C7C732 /* 6-568h@2x.png */,
 				085FDF4D18D7173900F3465A /* 480h@2x.png */,
 				085FDF4E18D7173900F3465A /* 568h@2x.png */,
 			);
@@ -481,7 +493,6 @@
 			isa = PBXGroup;
 			children = (
 				08A709D618F565D80061691A /* v1.pdf */,
-				08A709D718F565D80061691A /* v10.pdf */,
 				08A709D818F565D80061691A /* v2.pdf */,
 				08A709D918F565D80061691A /* v3.pdf */,
 				08A709DA18F565D80061691A /* v4.pdf */,
@@ -490,6 +501,7 @@
 				08A709DD18F565D80061691A /* v7.pdf */,
 				08A709DE18F565D80061691A /* v8.pdf */,
 				08A709DF18F565D80061691A /* v9.pdf */,
+				08A709D718F565D80061691A /* v10.pdf */,
 			);
 			path = Fart;
 			sourceTree = "<group>";
@@ -687,6 +699,7 @@
 		08FA780918A28E4800097C6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				083DBB5F18F7FEA800C7C732 /* ImageIO.framework */,
 				08FA784318A28F6C00097C6E /* QuartzCore.framework */,
 				08FA780A18A28E4800097C6E /* Foundation.framework */,
 				08FA780C18A28E4800097C6E /* CoreGraphics.framework */,
@@ -945,6 +958,7 @@
 				08A70A3418F565D80061691A /* W1.pdf in Resources */,
 				08A70A6A18F565D80061691A /* m3Snudd.pdf in Resources */,
 				08A70A5F18F565D80061691A /* Ek1.pdf in Resources */,
+				083DBB5D18F7E3A200C7C732 /* 6-480h@2x.png in Resources */,
 				08A70A8418F565D80061691A /* t1.pdf in Resources */,
 				08395E8918A9641400CDCDFC /* Icon-76.png in Resources */,
 				08A70A7818F565D80061691A /* s4.pdf in Resources */,
@@ -1020,7 +1034,9 @@
 				08A70A4318F565D80061691A /* P3.pdf in Resources */,
 				08A70A6318F565D80061691A /* L2.pdf in Resources */,
 				08A70A6018F565D80061691A /* Ek2.pdf in Resources */,
+				083DBB5E18F7E3A200C7C732 /* 6-568h@2x.png in Resources */,
 				08A70A6C18F565D80061691A /* m4Snudd.pdf in Resources */,
+				083DBB5C18F7E3A200C7C732 /* 6-480h.png in Resources */,
 				08A70A8518F565D80061691A /* t1Snudd.pdf in Resources */,
 				08395E8818A9641400CDCDFC /* Icon-72.png in Resources */,
 				085FDF5018D7173900F3465A /* 568h@2x.png in Resources */,
@@ -1195,6 +1211,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fysikkformler/Assisting Files/Fysikkformler-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Fysikkformler/Assisting Files/Fysikkformler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1211,6 +1228,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fysikkformler/Assisting Files/Fysikkformler-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Fysikkformler/Assisting Files/Fysikkformler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

@@ -11,4 +11,5 @@
 @interface Singleton : NSObject
 + (Singleton *)sharedData;
 @property NSArray *menuObjects;
+@property NSDictionary *JSONDict;
 @end
