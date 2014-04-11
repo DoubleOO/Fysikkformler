@@ -188,7 +188,7 @@
                     ]
     },
     "v":{
-        "info":"<#INFO#>",
+        "info":"Ved bevegelsesformlene (#b) gjelder kun konstant akselerasjon. \n Lysfarten er 3,00*10^8",
         "formulas":[
                     {
                     "contains":[
@@ -202,21 +202,21 @@
                                 "a",
                                 "t"
                                 ],
-                    "note":"<#note#>"
+                    "note":"#b"
                     },
                     {
                     "contains":[
                                 "a",
                                 "s"
                                 ],
-                    "note":"<#note#>"
+                    "note":"#b"
                     },
                     {
                     "contains":[
                                 "s",
                                 "t"
                                 ],
-                    "note":"<#note#>"
+                    "note":""
                     },
                     {
                     "contains":[
@@ -230,7 +230,7 @@
                                 "b",
                                 "T"
                                 ],
-                    "note":"<#note#>"
+                    "note":"T er perioden"
                     },
                     {
                     "contains":[
@@ -244,21 +244,21 @@
                                 "b",
                                 "c"
                                 ],
-                    "note":"SELF.lag et eller annet til c(lysfarten)"
+                    "note":"c er lysfarten"
                     },
                     {
                     "contains":[
                                 "b",
                                 "c"
                                 ],
-                    "note":"SELF.lag et eller annet til c(lysfarten)"
+                    "note":"c er lysfarten"
                     },
                     {
                     "contains":[
                                 "H",
                                 "r"
                                 ],
-                    "note":"SELF.hva er r? skal den ha egen referanse?"
+                    "note":"r er radius. Avstand oss <---> stjerne"
                     }
                     ]
     },
