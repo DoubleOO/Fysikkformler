@@ -228,13 +228,13 @@
                     {
                     "contains":[
                                 "b",
-                                "T"
+                                "Tm"
                                 ],
                     "note":"T er perioden"
                     },
                     {
                     "contains":[
-                                "T",
+                                "Tm",
                                 "m"
                                 ],
                     "note":"SELF.hva er k???"
@@ -342,7 +342,7 @@
                     {
                     "contains":[
                                 "k",
-                                "T"
+                                "Tm"
                                 ],
                     "note":"SELF.hva er k??"
                     },
@@ -533,7 +533,7 @@
                     }
                     ]
     },
-    "T":{
+    "Tm":{
         "info":"<#INFO#>",
         "formulas":[
                     {
@@ -632,7 +632,7 @@
         "formulas":[
                     {
                     "contains":[
-                                "T"
+                                "Tm"
                                 ],
                     "note":"sigma = 5,67*10^-8"
                     },

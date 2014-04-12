@@ -109,10 +109,6 @@
 		083DBC2E18F9380C00C7C732 /* Is2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBC418F9380C00C7C732 /* Is2.pdf */; };
 		083DBC2F18F9380C00C7C732 /* Is3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBC518F9380C00C7C732 /* Is3.pdf */; };
 		083DBC3018F9380C00C7C732 /* Is3Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBC618F9380C00C7C732 /* Is3Snudd.pdf */; };
-		083DBC3118F9380C00C7C732 /* T1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBC818F9380C00C7C732 /* T1.pdf */; };
-		083DBC3218F9380C00C7C732 /* T2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBC918F9380C00C7C732 /* T2.pdf */; };
-		083DBC3318F9380C00C7C732 /* T2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBCA18F9380C00C7C732 /* T2Snudd.pdf */; };
-		083DBC3418F9380C00C7C732 /* T3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBCB18F9380C00C7C732 /* T3.pdf */; };
 		083DBC3518F9380C00C7C732 /* rho1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBCD18F9380C00C7C732 /* rho1.pdf */; };
 		083DBC3618F9380C00C7C732 /* t1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBCF18F9380C00C7C732 /* t1.pdf */; };
 		083DBC3718F9380C00C7C732 /* t1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBD018F9380C00C7C732 /* t1Snudd.pdf */; };
@@ -126,6 +122,10 @@
 		083DBC3F18F9380C00C7C732 /* p.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBD918F9380C00C7C732 /* p.pdf */; };
 		083DBC4018F9380C00C7C732 /* U1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBDB18F9380C00C7C732 /* U1.pdf */; };
 		083DBC4118F9380C00C7C732 /* U2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBBDC18F9380C00C7C732 /* U2.pdf */; };
+		083DBC4718F9620D00C7C732 /* Tm1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBC4318F9620D00C7C732 /* Tm1.pdf */; };
+		083DBC4818F9620D00C7C732 /* Tm2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBC4418F9620D00C7C732 /* Tm2.pdf */; };
+		083DBC4918F9620D00C7C732 /* Tm2Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBC4518F9620D00C7C732 /* Tm2Snudd.pdf */; };
+		083DBC4A18F9620D00C7C732 /* Tm3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 083DBC4618F9620D00C7C732 /* Tm3.pdf */; };
 		085FDF4B18D7066200F3465A /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 085FDF4A18D7066200F3465A /* Singleton.m */; };
 		085FDF4F18D7173900F3465A /* 480h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4D18D7173900F3465A /* 480h@2x.png */; };
 		085FDF5018D7173900F3465A /* 568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085FDF4E18D7173900F3465A /* 568h@2x.png */; };
@@ -274,10 +274,6 @@
 		083DBBC418F9380C00C7C732 /* Is2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Is2.pdf; sourceTree = "<group>"; };
 		083DBBC518F9380C00C7C732 /* Is3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Is3.pdf; sourceTree = "<group>"; };
 		083DBBC618F9380C00C7C732 /* Is3Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Is3Snudd.pdf; sourceTree = "<group>"; };
-		083DBBC818F9380C00C7C732 /* T1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = T1.pdf; sourceTree = "<group>"; };
-		083DBBC918F9380C00C7C732 /* T2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = T2.pdf; sourceTree = "<group>"; };
-		083DBBCA18F9380C00C7C732 /* T2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = T2Snudd.pdf; sourceTree = "<group>"; };
-		083DBBCB18F9380C00C7C732 /* T3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = T3.pdf; sourceTree = "<group>"; };
 		083DBBCD18F9380C00C7C732 /* rho1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rho1.pdf; sourceTree = "<group>"; };
 		083DBBCF18F9380C00C7C732 /* t1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t1.pdf; sourceTree = "<group>"; };
 		083DBBD018F9380C00C7C732 /* t1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = t1Snudd.pdf; sourceTree = "<group>"; };
@@ -291,6 +287,10 @@
 		083DBBD918F9380C00C7C732 /* p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = p.pdf; sourceTree = "<group>"; };
 		083DBBDB18F9380C00C7C732 /* U1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = U1.pdf; sourceTree = "<group>"; };
 		083DBBDC18F9380C00C7C732 /* U2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = U2.pdf; sourceTree = "<group>"; };
+		083DBC4318F9620D00C7C732 /* Tm1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Tm1.pdf; sourceTree = "<group>"; };
+		083DBC4418F9620D00C7C732 /* Tm2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Tm2.pdf; sourceTree = "<group>"; };
+		083DBC4518F9620D00C7C732 /* Tm2Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Tm2Snudd.pdf; sourceTree = "<group>"; };
+		083DBC4618F9620D00C7C732 /* Tm3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Tm3.pdf; sourceTree = "<group>"; };
 		085FDF4918D7066200F3465A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		085FDF4A18D7066200F3465A /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		085FDF4D18D7173900F3465A /* 480h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480h@2x.png"; sourceTree = "<group>"; };
@@ -400,6 +400,7 @@
 		083DBB6118F9380C00C7C732 /* FormelPDF */ = {
 			isa = PBXGroup;
 			children = (
+				083DBC4218F9620D00C7C732 /* Temperatur */,
 				083DBB6218F9380C00C7C732 /* Akselerasjon */,
 				083DBB6C18F9380C00C7C732 /* Arbeid */,
 				083DBB7418F9380C00C7C732 /* Bølgelengde */,
@@ -417,7 +418,6 @@
 				083DBBB618F9380C00C7C732 /* Spenning */,
 				083DBBBA18F9380C00C7C732 /* Strekning */,
 				083DBBC118F9380C00C7C732 /* Strøm */,
-				083DBBC718F9380C00C7C732 /* Temperatur */,
 				083DBBCC18F9380C00C7C732 /* Tetthet */,
 				083DBBCE18F9380C00C7C732 /* Tid */,
 				083DBBD818F9380C00C7C732 /* Trykk */,
@@ -629,17 +629,6 @@
 			path = "Strøm";
 			sourceTree = "<group>";
 		};
-		083DBBC718F9380C00C7C732 /* Temperatur */ = {
-			isa = PBXGroup;
-			children = (
-				083DBBC818F9380C00C7C732 /* T1.pdf */,
-				083DBBC918F9380C00C7C732 /* T2.pdf */,
-				083DBBCA18F9380C00C7C732 /* T2Snudd.pdf */,
-				083DBBCB18F9380C00C7C732 /* T3.pdf */,
-			);
-			path = Temperatur;
-			sourceTree = "<group>";
-		};
 		083DBBCC18F9380C00C7C732 /* Tetthet */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +668,17 @@
 				083DBBDC18F9380C00C7C732 /* U2.pdf */,
 			);
 			path = "Utstrålingstetthet";
+			sourceTree = "<group>";
+		};
+		083DBC4218F9620D00C7C732 /* Temperatur */ = {
+			isa = PBXGroup;
+			children = (
+				083DBC4318F9620D00C7C732 /* Tm1.pdf */,
+				083DBC4418F9620D00C7C732 /* Tm2.pdf */,
+				083DBC4518F9620D00C7C732 /* Tm2Snudd.pdf */,
+				083DBC4618F9620D00C7C732 /* Tm3.pdf */,
+			);
+			path = Temperatur;
 			sourceTree = "<group>";
 		};
 		085FDF4C18D7173900F3465A /* Launch */ = {
@@ -956,6 +956,7 @@
 				083DBBDE18F9380C00C7C732 /* a1snudd.pdf in Resources */,
 				08395E8918A9641400CDCDFC /* Icon-76.png in Resources */,
 				083DBC2A18F9380C00C7C732 /* s4.pdf in Resources */,
+				083DBC4718F9620D00C7C732 /* Tm1.pdf in Resources */,
 				083DBC0518F9380C00C7C732 /* v8.pdf in Resources */,
 				083DBBEE18F9380C00C7C732 /* b1Snudd.pdf in Resources */,
 				083DBBF018F9380C00C7C732 /* b2Snudd.pdf in Resources */,
@@ -963,6 +964,7 @@
 				083DBC3C18F9380C00C7C732 /* t4.pdf in Resources */,
 				083DBC1118F9380C00C7C732 /* Ek1.pdf in Resources */,
 				083DBC2018F9380C00C7C732 /* Ep2.pdf in Resources */,
+				083DBC4918F9620D00C7C732 /* Tm2Snudd.pdf in Resources */,
 				083DBBF318F9380C00C7C732 /* P1.pdf in Resources */,
 				083DBC1618F9380C00C7C732 /* L3.pdf in Resources */,
 				083DBC1218F9380C00C7C732 /* Ek2.pdf in Resources */,
@@ -980,7 +982,6 @@
 				083DBBFD18F9380C00C7C732 /* v1.pdf in Resources */,
 				083DBC2618F9380C00C7C732 /* s1.pdf in Resources */,
 				083DBBF718F9380C00C7C732 /* P5.pdf in Resources */,
-				083DBC3118F9380C00C7C732 /* T1.pdf in Resources */,
 				083DBC2418F9380C00C7C732 /* Us2.pdf in Resources */,
 				083DBBDF18F9380C00C7C732 /* a2.pdf in Resources */,
 				083DBBFC18F9380C00C7C732 /* E4.pdf in Resources */,
@@ -997,6 +998,7 @@
 				083DBC3518F9380C00C7C732 /* rho1.pdf in Resources */,
 				083DBC2518F9380C00C7C732 /* Us3.pdf in Resources */,
 				083DBC0E18F9380C00C7C732 /* R3.pdf in Resources */,
+				083DBC4818F9620D00C7C732 /* Tm2.pdf in Resources */,
 				083DBC3E18F9380C00C7C732 /* t6.pdf in Resources */,
 				08395E8B18A9641400CDCDFC /* Icon-Med-40@2x.png in Resources */,
 				08395E8A18A9641400CDCDFC /* Icon-Med-40.png in Resources */,
@@ -1017,7 +1019,6 @@
 				08395E8718A9641400CDCDFC /* Icon-152.png in Resources */,
 				08395E8C18A9641400CDCDFC /* Icon-Small-50.png in Resources */,
 				083DBC3718F9380C00C7C732 /* t1Snudd.pdf in Resources */,
-				083DBC3218F9380C00C7C732 /* T2.pdf in Resources */,
 				083DBBEF18F9380C00C7C732 /* b2.pdf in Resources */,
 				08395E8518A9641400CDCDFC /* Icon-120.png in Resources */,
 				083DBBEC18F9380C00C7C732 /* W6.pdf in Resources */,
@@ -1030,10 +1031,10 @@
 				083DBC3918F9380C00C7C732 /* t2Snudd.pdf in Resources */,
 				083DBC0B18F9380C00C7C732 /* R1Snudd.pdf in Resources */,
 				083DBC3B18F9380C00C7C732 /* t3Snudd.pdf in Resources */,
-				083DBC3418F9380C00C7C732 /* T3.pdf in Resources */,
 				083DBBE418F9380C00C7C732 /* a4snudd.pdf in Resources */,
 				083DBC2318F9380C00C7C732 /* Us1.pdf in Resources */,
 				083DBC3018F9380C00C7C732 /* Is3Snudd.pdf in Resources */,
+				083DBC4A18F9620D00C7C732 /* Tm3.pdf in Resources */,
 				083DBC0618F9380C00C7C732 /* v9.pdf in Resources */,
 				083DBC1D18F9380C00C7C732 /* m4.pdf in Resources */,
 				083DBC1C18F9380C00C7C732 /* m3Snudd.pdf in Resources */,
@@ -1057,7 +1058,6 @@
 				083DBBDD18F9380C00C7C732 /* a1.pdf in Resources */,
 				083DBBFE18F9380C00C7C732 /* v10.pdf in Resources */,
 				083DBC3F18F9380C00C7C732 /* p.pdf in Resources */,
-				083DBC3318F9380C00C7C732 /* T2Snudd.pdf in Resources */,
 				083DBBE318F9380C00C7C732 /* a4.pdf in Resources */,
 				083DBC0018F9380C00C7C732 /* v3.pdf in Resources */,
 				08395E8F18A9641400CDCDFC /* Icon-Small@2x.png in Resources */,

@@ -112,7 +112,7 @@
                          
                          @{@"symbol":@"T",
                            @"name":@"Temperatur",
-                           @"filepre":@"T"},
+                           @"filepre":@"Tm"},
                          
                          @{@"symbol":@"\u03C1",
                            @"name":@"Tetthet",
