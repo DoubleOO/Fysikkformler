@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *symbolLabel;
-@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+/*Cellen i menyen som viser symbolene*/
+@property (strong, nonatomic) IBOutlet UILabel *symbolLabel;    //Venstre, LIGHT 45pt, symbol
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;      //Høyre, navnet til symbolet
 
 @end

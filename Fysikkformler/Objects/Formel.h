@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Formel : NSObject
-@property NSString *note;
-@property NSString *solvingFor;
-@property NSArray *contains;
-@property UIImage *mainFormelImage;
-@property UIImage *flipFormelImage;
+@property NSString *note;           //"note": i JSON
+@property NSArray *contains;        //"contains": i JSON
+@property UIImage *mainFormelImage; //xn.pdf
+@property UIImage *flipFormelImage; //xnSnudd.pdf
+
 -(id)initWithDict:(NSDictionary *)dict forChar:(NSString*)unit andNumber:(int)num scaleBy:(float)scale;
 @end

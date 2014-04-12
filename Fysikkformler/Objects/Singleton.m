@@ -9,6 +9,8 @@
 #import "Singleton.h"
 
 @implementation Singleton
+
+//Standard Singleton (Delt data for hele appen) 
 + (Singleton *)sharedData
 {
     static Singleton *sharedSingleton;

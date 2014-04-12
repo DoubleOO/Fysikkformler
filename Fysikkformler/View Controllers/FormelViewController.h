@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FormelViewController : UIViewController
-@property NSDictionary *currentUnit;
-
+@property NSDictionary *currentUnit; //Sendt fra StartViewController, object fra {MenuObjects}, {name, symbol, filepre, info}
 @end

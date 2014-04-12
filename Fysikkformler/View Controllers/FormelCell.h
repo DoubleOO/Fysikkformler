@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Formel.h"
 @interface FormelCell : UITableViewCell
-@property IBOutlet UILabel *noteLabel;
-@property IBOutlet UIImageView *mainFormulaImageView;
-@property IBOutlet UIImageView *flipFormulaImageView;
-@property (strong, retain) Formel *formula;
+
+/*Cellen i hver formelview som displayer formlene*/
+@property IBOutlet UILabel *noteLabel;                  //Label for {"note"}
+@property IBOutlet UIImageView *mainFormulaImageView;   //ImageView for main
+@property IBOutlet UIImageView *flipFormulaImageView;   //ImageView for formelbokversjonen
+@property (strong, retain) Formel *formula;             //Formelen cellen inneholder
 @end

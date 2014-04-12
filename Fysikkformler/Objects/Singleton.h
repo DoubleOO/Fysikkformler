@@ -10,6 +10,6 @@
 
 @interface Singleton : NSObject
 + (Singleton *)sharedData;
-@property NSArray *menuObjects;
-@property NSDictionary *JSONDict;
+@property NSArray *menuObjects;     //Manuell JSON fra StartViewController, {symbol, filepre, name, info}
+@property NSDictionary *JSONDict;   //Formulas.json referanse
 @end

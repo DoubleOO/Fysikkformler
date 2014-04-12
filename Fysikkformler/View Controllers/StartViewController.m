@@ -24,6 +24,8 @@
 {
     [super viewDidLoad];
 
+    
+    /***STYLE NAV BAR***/
     self.navigationItem.title = @"Velg enhet";
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
         //iOS 6
@@ -33,14 +35,17 @@
         self.navigationController.navigationBar.barTintColor = RGB(6, 141, 253);
         self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     }
-    self.navigationController.delegate = self;
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+
     
+    self.navigationController.delegate = self;
+    
+    //Infobutton
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [infoButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
    
-    //Manuell JSON Below
+    //Manuell JSON
     {self.menuObjects = @[
                          @{@"symbol": @"a",
                            @"name":@"Akselerasjon",
@@ -139,6 +144,7 @@
 }
 
 -(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    //Hvis du kommer tilbake hit, de-select den du valgte i stad med animasjon
     if (viewController == self) {
         [self.menuTableView deselectRowAtIndexPath:[self.menuTableView indexPathForSelectedRow] animated:YES];
     }
@@ -152,6 +158,8 @@
 }
 
 #pragma mark - TableView
+
+//Boilerplate tableview
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60;
 }
