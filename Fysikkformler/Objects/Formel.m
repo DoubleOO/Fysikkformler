@@ -14,14 +14,14 @@
     if(self)
     {
         //NOTE
-        NSString *note = [dictionary objectForKey:@"note"];
+        NSString *note = dictionary[@"note"];
         if ([note isEqualToString:@"<#note#>"]) {
             note = @"";
         }
         self.note = note;
         
         //CONTAINS
-        self.contains = [dictionary objectForKey:@"contains"];
+        self.contains = dictionary[@"contains"];
        
         
         //MAINIMAGE

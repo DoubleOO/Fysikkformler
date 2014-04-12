@@ -13,7 +13,6 @@
 #import "Singleton.h"
 #import <ImageIO/ImageIO.h>
 
-
 @interface FormelViewController ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate,UIActionSheetDelegate>
 @property IBOutlet UITableView *tableView;
 @property NSMutableArray *allFormulas;
@@ -29,11 +28,11 @@
     [super viewDidLoad];
     NSLog(@"Viewing %@",self.currentUnit);
     self.actionSheetOptions = [[NSMutableArray alloc]init];
-   
+    
     /***SETUP***/
     NSString *headerString = [[NSString alloc]initWithFormat:@"%@",self.currentUnit[@"name"]];
     self.navigationItem.title = headerString;
-
+    
     self.allFormulas = [[NSMutableArray alloc]init];
     self.currentFormulas = [[NSMutableArray alloc]init];
     
@@ -41,7 +40,7 @@
     lpgr.minimumPressDuration = 0.3f; //seconds
     lpgr.delegate = self;
     lpgr.delaysTouchesBegan = YES;
-
+    
     [self.view addGestureRecognizer:lpgr];
     
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
@@ -71,18 +70,41 @@
     /***CALCULATING WIDEST PDF***/
     NSMutableArray *biggestPDFArray = [[NSMutableArray alloc]init];
     
-    for (int i = 0; i<=formulasForCurrentUnit.count; i++) {
-        int num = i+1;
-        NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i.pdf",self.currentUnit[@"filepre"],num];
-        UIImage *originalImage = [UIImage originalSizeImageWithPDFNamed:imageString];
-        NSNumber *size = [NSNumber numberWithInt:originalImage.size.width];
-        [biggestPDFArray addObject:size];
+    for (int i = 0; i<= formulasForCurrentUnit.count; i++) {
         
-        NSString *flipImageString = [[NSString alloc]initWithFormat:@"%@%iSnudd.pdf",self.currentUnit[@"filepre"],num];
-        UIImage *flipImage = [UIImage originalSizeImageWithPDFNamed:flipImageString];
-        NSNumber *flipSize = [NSNumber numberWithInt:flipImage.size.width];
-        [biggestPDFArray addObject:flipSize];
-
+        int num = i+1;
+        
+        {
+            //Vanlig
+            NSString *imageString = [[NSString alloc]initWithFormat:@"%@%i",self.currentUnit[@"filepre"],num];
+            if ([[NSBundle mainBundle]pathForResource:imageString ofType:@"pdf"]) {
+                NSURL *pdfURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:imageString ofType:@"pdf"]];
+                NSLog(@"%@",pdfURL.pathComponents.lastObject);
+                CGPDFDocumentRef doc = CGPDFDocumentCreateWithURL((__bridge CFURLRef)pdfURL);
+                CGPDFPageRef page = CGPDFDocumentGetPage(doc, 1);
+                CGRect mediaBox = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
+                CGPDFDocumentRelease(doc);
+                
+                NSNumber *width = [NSNumber numberWithInt:mediaBox.size.width];
+                [biggestPDFArray addObject:width];
+            }
+        }
+        {
+            //Snudd
+            NSString *imageString = [[NSString alloc]initWithFormat:@"%@%iSnudd",self.currentUnit[@"filepre"],num];
+            if ([[NSBundle mainBundle]pathForResource:imageString ofType:@"pdf"]) {
+                NSURL *pdfURL = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:imageString ofType:@"pdf"]];
+                NSLog(@"%@",pdfURL.pathComponents.lastObject);
+                CGPDFDocumentRef doc = CGPDFDocumentCreateWithURL((__bridge CFURLRef)pdfURL);
+                CGPDFPageRef page = CGPDFDocumentGetPage(doc, 1);
+                CGRect mediaBox = CGPDFPageGetBoxRect(page, kCGPDFMediaBox);
+                CGPDFDocumentRelease(doc);
+                
+                NSNumber *width = [NSNumber numberWithInt:mediaBox.size.width];
+                [biggestPDFArray addObject:width];
+                
+            }
+        }
     }
     
     NSNumber *max = [biggestPDFArray valueForKeyPath:@"@max.self"];
@@ -95,13 +117,13 @@
         Formel *formel = [[Formel alloc]initWithDict:formulaInDict forChar:self.currentUnit[@"filepre"] andNumber:i+1 scaleBy:scaleBy];
         [self.allFormulas addObject:formel];
     }
-    
+        
     /***CREATE TABLEVIEW***/
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"FormelCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"FormelCell"];
-
-
+    
+    
 }
 
 -(void)showInfo{
@@ -137,7 +159,7 @@
     actionSheet.cancelButtonIndex = actionSheet.numberOfButtons-1;
     
     [actionSheet showInView:self.view];
-
+    
 }
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -153,7 +175,7 @@
     FormelViewController *formelView = [self.storyboard instantiateViewControllerWithIdentifier:@"FormelView"];
     formelView.currentUnit = newFormula;
     [self.navigationController pushViewController:formelView animated:YES];
-
+    
 }
 
 #pragma mark - tableview
@@ -195,12 +217,12 @@
         cell.flipFormulaImageView.hidden = YES;
         cell.mainFormulaImageView.hidden = NO;
     }
-
+    
     return cell;
-
+    
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-   
+    
     FormelCell *formelCell = (FormelCell*)[tableView cellForRowAtIndexPath:indexPath];
     
     if (formelCell.mainFormulaImageView.hidden) {
