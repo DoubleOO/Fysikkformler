@@ -237,7 +237,7 @@
                                 "Tm",
                                 "m"
                                 ],
-                    "note":"SELF.hva er k???"
+                    "note":"k er Boltzmanns konstant = 1,38*10^-23 J/K"
                     },
                     {
                     "contains":[
@@ -344,7 +344,7 @@
                                 "k",
                                 "Tm"
                                 ],
-                    "note":"SELF.hva er k??"
+                    "note":"k er Boltzmanns konstant = 1,38*10^-23 J/K"
                     },
                     {
                     "contains":[
@@ -620,7 +620,7 @@
         "formulas":[
                     {
                     "contains":[
-                                "F",
+                                "Fs",
                                 "A"
                                 ],
                     "note":"<#note#>"
@@ -644,6 +644,29 @@
                     "note":"<#note#>"
                     }
                     ]
-    }
+    },
+    "Fs":{
+        "info":"<#INFO#>",
+        "formulas":[
+    {   "contains": [
+                    
+                     ],
+        "note": "Newtons 1. lov"
+    },
+    {   "contains": [
+                     "m",
+                     "a"
+                     ],
+        "note": "Newtons 2. lov"
+    },
+
+    {   "contains": [
+                    
+                     ],
+        "note": "Newtons 3. lov"
+                    }
+
+    ]
+    },
     
 }

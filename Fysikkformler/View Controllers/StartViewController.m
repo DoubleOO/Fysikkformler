@@ -80,7 +80,7 @@
                            @"filepre":@"R"},
                          
                          @{@"symbol":@"I",
-                           @"name":@"Intensitet (Stjerner)",
+                           @"name":@"Intensitet",
                            @"filepre":@"I"},
                          
                          @{@"symbol":@"Ek",
