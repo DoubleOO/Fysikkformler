@@ -87,6 +87,10 @@
                            @"name":@"Kinetisk Energi",
                            @"filepre":@"Ek"},
                          
+                         @{@"symbol":@"F",
+                           @"name":@"Krefter",
+                           @"filepre":@"Fs"},
+                         
                          @{@"symbol":@"Q",
                            @"name":@"Ladning",
                            @"filepre":@"L"},
@@ -129,11 +133,16 @@
                          
                          @{@"symbol":@"p",
                            @"name":@"Trykk",
-                           @"filepre":@"p"},
+                           @"filepre":@"pp"},
                          
                          @{@"symbol":@"U",
                            @"name":@"Utstrålingstetthet",
                            @"filepre":@"U"},
+                         
+                         @{@"symbol":@"Q,q",
+                           @"name":@"Varme",
+                           @"filepre":@"Vm"},
+                         
                          ];}
     
     [Singleton sharedData].menuObjects = self.menuObjects;

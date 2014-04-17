@@ -1,672 +1,726 @@
 {
-    "a":{
-        "info":"Benevningen er distanse/tid^2 \n m/s^2",
-        "formulas":[
-                    {
-                    "contains":[
-                                "v",
-                                "t"
-                                ],
-                    "note":"<#note#>"
+    "a": {
+        "info": "Benevningen er distanse/tid^2 \n m/s^2 \n Ved bevegelsesformlene (#b) gjelder kun konstant akselerasjon. \n Lysfarten er 3,00*10^8",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "v",
+                                  "t"
+                                  ],
+                     "note": "#b"
+                     },
+                     {
+                     "contains": [
+                                  "s",
+                                  "v",
+                                  "t"
+                                  ],
+                     "note": "#b"
+                     },
+                     {
+                     "contains": [
+                                  "F",
+                                  "m"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "v",
+                                  "s"
+                                  ],
+                     "note": "#b"
+                     },
+                     {
+                     "contains": [
+                                  "s",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
+    },
+    "W": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "F",
+                                  "s"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "R",
+                                  "s"
+                                  ],
+                     "note": "Wr er friksjonsarbeidet"
+                     },
+                     {
+                     "contains": [
+                                  "Us",
+                                  "L"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Us",
+                                  "Is",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Re",
+                                  "Is",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Us",
+                                  "Re",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
+    },
+    "b": {
+        "info": "n er ordenstallet for lysmaksimumet \n c er lysfarten = 3,00*10^8 m/s",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "v",
+                                  "f"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "s"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "d"
+                                  ],
+                     "note": "d er gitterkonstanten. Theta er vinkelen mellom SELF..?"
+                     },
+                     {   "contains": [
+                                      "E"
+    ],
+    "note": "h er Plancks konstant = 6,63*10^-34 Js"
                     },
-                    {
-                    "contains":[
-                                "s",
-                                "v",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "F",
-                                "m"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "v",
-                                "s"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "s",
-                                "t"
-                                ],
-                    "note":"<#note#>"
+                     {   "contains": [
+                "f"
+    ],
+    "note": "<#note#>"
                     }
-                    ]
+                     ]
     },
-    "W":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "F",
-                                "s"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "R",
-                                "s"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Us",
-                                "L"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Us",
-                                "Is",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Re",
-                                "Is",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Us",
-                                "Re",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "P": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "E",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "W",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Us",
+                                  "Is"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Re",
+                                  "Is"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Us",
+                                  "Re"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "b":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "v",
-                                "f"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "s"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "d",
-                                "<#contains 2#>"
-                                ],
-                    "note":"SELF.lag en til d (gitterkonstanten) og lag en forklaring til \theta"
-                    }
-                    ]
+    "E": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "P",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "W"
+                                  ],
+                     "note": "Friksjonsarbeidet"
+                     },
+                     {
+                     "contains": [
+                                  "m"
+                                  ],
+                     "note": "c er lysfarten = 3,00*10^8 m/s"
+                     },
+                     {
+                     "contains": [
+                                  "Ek",
+                                  "Ep"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "<#contains 1#>",
+                                  "<#contains 2#>"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "<#contains 1#>",
+                                  "<#contains 2#>"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "<#contains 1#>",
+                                  "<#contains 2#>"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "P":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "E",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "W",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Us",
-                                "Is"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Re",
-                                "Is"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Us",
-                                "Re"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "v": {
+        "info": "Ved bevegelsesformlene (#b) gjelder kun konstant akselerasjon. \n Lysfarten er 3,00*10^8",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "s",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "a",
+                                  "t"
+                                  ],
+                     "note": "#b"
+                     },
+                     {
+                     "contains": [
+                                  "a",
+                                  "s"
+                                  ],
+                     "note": "#b"
+                     },
+                     {
+                     "contains": [
+                                  "s",
+                                  "t"
+                                  ],
+                     "note": ""
+                     },
+                     {
+                     "contains": [
+                                  "f",
+                                  "b"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "b",
+                                  "Tm"
+                                  ],
+                     "note": "T er perioden"
+                     },
+                     {
+                     "contains": [
+                                  "Tm",
+                                  "m"
+                                  ],
+                     "note": "k er Boltzmanns konstant = 1,38*10^-23 J/K"
+                     },
+                     {
+                     "contains": [
+                                  "b",
+                                  "c"
+                                  ],
+                     "note": "c er lysfarten"
+                     },
+                     {
+                     "contains": [
+                                  "b",
+                                  "c"
+                                  ],
+                     "note": "c er lysfarten"
+                     },
+                     {
+                     "contains": [
+                                  "H",
+                                  "r"
+                                  ],
+                     "note": "r er radius. Avstand oss <---> stjerne"
+                     }
+                     ]
     },
-    "E":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "P",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "W"
-                                ],
-                    "note":"Friksjonsarbeidet"
-                    },
-                    {
-                    "contains":[
-                                "m",
-                                "c"
-                                ],
-                    "note":"SELF.lag en forklaring til c (lysfarten)"
-                    },
-                    {
-                    "contains":[
-                                "Ek",
-                                "Ep"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "f": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "v",
+                                  "b"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "b"
+                                  ],
+                     "note": "c er lysfarten = 3,00*10^8 m/s"
+                     },
+                     {
+                     "contains": [
+                                  "<#contains 1#>"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "v":{
-        "info":"Ved bevegelsesformlene (#b) gjelder kun konstant akselerasjon. \n Lysfarten er 3,00*10^8",
-        "formulas":[
-                    {
-                    "contains":[
-                                "s",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "a",
-                                "t"
-                                ],
-                    "note":"#b"
-                    },
-                    {
-                    "contains":[
-                                "a",
-                                "s"
-                                ],
-                    "note":"#b"
-                    },
-                    {
-                    "contains":[
-                                "s",
-                                "t"
-                                ],
-                    "note":""
-                    },
-                    {
-                    "contains":[
-                                "f",
-                                "b"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "b",
-                                "Tm"
-                                ],
-                    "note":"T er perioden"
-                    },
-                    {
-                    "contains":[
-                                "Tm",
-                                "m"
-                                ],
-                    "note":"k er Boltzmanns konstant = 1,38*10^-23 J/K"
-                    },
-                    {
-                    "contains":[
-                                "b",
-                                "c"
-                                ],
-                    "note":"c er lysfarten"
-                    },
-                    {
-                    "contains":[
-                                "b",
-                                "c"
-                                ],
-                    "note":"c er lysfarten"
-                    },
-                    {
-                    "contains":[
-                                "H",
-                                "r"
-                                ],
-                    "note":"r er radius. Avstand oss <---> stjerne"
-                    }
-                    ]
+    "R": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "<#contains 1#>"
+                                  ],
+                     "note": "my er friksjonstallet. N er normalkraften"
+                     },
+                     {
+                     "contains": [
+                                  "W",
+                                  "s"
+                                  ],
+                     "note": "Wr er friksjonsarbeidet"
+                     },
+                     {
+                     "contains": [
+                                  "v"
+                                  ],
+                     "note": "k er objektets friksjonskonstant"
+                     }
+                     ]
     },
-    "f":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "v",
-                                "b"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "b",
-                                "c"
-                                ],
-                    "note":"SELF. ccccc??"
-                    },
-                    {
-                    "contains":[
-                                "<#contains 1#>"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "I": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "P",
+                                  "A"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "r"
+                                  ],
+                     "note": "SELF.lag noe for r"
+                     }
+                     ]
     },
-    "R":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "<#contains 1#>"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "W",
-                                "s"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "v"
-                                ],
-                    "note":"k er objektets friksjonskonstant SELF.dobbelsjekk"
-                    }
-                    ]
+    "Ek": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "m",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "k",
+                                  "Tm"
+                                  ],
+                     "note": "k er Boltzmanns konstant = 1,38*10^-23 J/K"
+                     },
+                     {
+                     "contains": [
+                                  "m",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "I":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "P",
-                                "A"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "r"
-                                ],
-                    "note":"SELF.lag noe for r"
-                    }
-                    ]
+    "L": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "W",
+                                  "Us"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "<#contains 1#>"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Is",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "Ek":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "m",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "k",
-                                "Tm"
-                                ],
-                    "note":"k er Boltzmanns konstant = 1,38*10^-23 J/K"
-                    },
-                    {
-                    "contains":[
-                                "m",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "m": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "F",
+                                  "a"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Ek",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Ep"
+                                  ],
+                     "note": "g = tyngdeakselerasjonen, h er høyde"
+                     },
+                     {
+                     "contains": [
+                                  "V"
+                                  ],
+                     "note": "SELF.lag en egen for volum. 'p' er massetetthet"
+                     }
+                     ]
     },
-    "L":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "W",
-                                "Us"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "<#contains 1#>"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Is",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "Ep": {
+        "info": "g=tyngdeakselerasjonen \n h=høyde",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "m"
+                                  ],
+                     "note": ""
+                     },
+                     {
+                     "contains": [
+                                  "v",
+                                  "m"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "m":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "F",
-                                "a"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Ek",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Ep"
-                                ],
-                    "note":"g = tyngdeakselerasjonen, h er høyde"
-                    },
-                    {
-                    "contains":[
-                                "V"
-                                ],
-                    "note":"SELF.lag en egen for volum. \rho er massetetthet"
-                    }
-                    ]
+    "Re": {
+        "info": "\rho er restisiviteten til metallet. Finnes i tabell. \n l er ",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "U",
+                                  "I"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  ""
+                                  ],
+                     "note": "l = lengden, A = tverrsnittsarealet"
+                     }
+                     ]
     },
-    "Ep":{
-        "info":"g=tyngdeakselerasjonen \n h=høyde",
-        "formulas":[
-                    {
-                    "contains":[
-                                "m"
-                                ],
-                    "note":""
-                    },
-                    {
-                    "contains":[
-                                "v",
-                                "m"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "Us": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "W",
+                                  "L"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Re",
+                                  "Is"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "Is",
+                                  "P"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "Re":{
-        "info":"\rho er restisiviteten til metallet. Finnes i tabell. \n l er ",
-        "formulas":[
-                    {
-                    "contains":[
-                                "U",
-                                "I"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                ""
-                                ],
-                    "note":"l = lengden, A = tverrsnittsarealet"
-                    }
-                    ]
+    "s": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "v",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "v",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "v",
+                                  "t",
+                                  "a"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "v",
+                                  "a"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "Us":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "W",
-                                "L"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Re",
-                                "Is"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "Is",
-                                "P"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "Is": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "Us",
+                                  "Re"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "L",
+                                  "t"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "P",
+                                  "Us"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "s":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "v",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "v",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "v",
-                                "t",
-                                "a"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "v",
-                                "a"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "Tm": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "b"
+                                  ],
+                     "note": "a = 2,90 * 10^-3"
+                     },
+                     {
+                     "contains": [
+                                  "U"
+                                  ],
+                     "note": "sigma = 5,67 * 10^-8"
+                     },
+                     {
+                     "contains": [
+                                  "P"
+                                  ],
+                     "note": "sigma = 5,67 * 10^-8"
+                     }
+                     ]
     },
-    "Is":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "Us",
-                                "Re"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "L",
-                                "t"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "P",
-                                "Us"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "rho": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "m",
+                                  "V"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "Tm":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "b"
-                                ],
-                    "note":"a = 2,90 * 10^-3"
-                    },
-                    {
-                    "contains":[
-                                "U"
-                                ],
-                    "note":"sigma = 5,67 * 10^-8"
-                    },
-                    {
-                    "contains":[
-                                "P"
-                                ],
-                    "note":"sigma = 5,67 * 10^-8"
-                    }
-                    ]
+    "t": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "s",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "a",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "s",
+                                  "v"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "W",
+                                  "P"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "E",
+                                  "P"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "L",
+                                  "Is"
+                                  ],
+                     "note": "Q = spenning"
+                     },
+                     {
+                     "contains": [
+                                  "Vm",
+                                  "P"
+                                  ],
+                     "note": "Q = varme"
+                     }
+                     ]
     },
-    "rho":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "m",
-                                "V"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "pp": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "Fs",
+                                  "A"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "t":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "s",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "a",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "s",
-                                "v"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "W",
-                                "P"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "E",
-                                "P"
-                                ],
-                    "note":"<#note#>"
-                    },
-                    {
-                    "contains":[
-                                "L",
-                                "Is"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "U": {
+        "info": "<#INFO#>",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "Tm"
+                                  ],
+                     "note": "sigma = 5,67*10^-8"
+                     },
+                     {
+                     "contains": [
+                                  "P",
+                                  "A"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
     },
-    "p":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "Fs",
-                                "A"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
+    "Fs": {
+        "info": "",
+        "formulas": [
+                     {
+                     "contains": [],
+                     "note": "Newtons 1. lov"
+                     },
+                     {
+                     "contains": [
+                                  "m",
+                                  "a"
+                                  ],
+                     "note": "Newtons 2. lov"
+                     },
+                     {
+                     "contains": [],
+                     "note": "Newtons 3. lov"
+                     }
+                     ]
     },
-    "U":{
-        "info":"<#INFO#>",
-        "formulas":[
-                    {
-                    "contains":[
-                                "Tm"
-                                ],
-                    "note":"sigma = 5,67*10^-8"
-                    },
-                    {
-                    "contains":[
-                                "P",
-                                "A"
-                                ],
-                    "note":"<#note#>"
-                    }
-                    ]
-    },
-    "Fs":{
-        "info":"<#INFO#>",
-        "formulas":[
-    {   "contains": [
-                    
-                     ],
-        "note": "Newtons 1. lov"
-    },
-    {   "contains": [
-                     "m",
-                     "a"
-                     ],
-        "note": "Newtons 2. lov"
-    },
-
-    {   "contains": [
-                    
-                     ],
-        "note": "Newtons 3. lov"
-                    }
-
-    ]
-    },
-    
+    "Vm": {
+        "info": "Symbolet for varme er Q, \n enheten er J. \n Spesifikk smeltevarme/fordampningsvarme er gitt ved q",
+        "formulas": [
+                     {
+                     "contains": [
+                                  "W"
+                                  ],
+                     "note": "Termofysikkens første lov"
+                     },
+                     {
+                     "contains": [
+                                  "m"
+                                  ],
+                     "note": "<#note#>"
+                     },
+                     {
+                     "contains": [
+                                  "m"
+                                  ],
+                     "note": "<#note#>"
+                     }
+                     ]
+    }
 }
