@@ -183,7 +183,7 @@
                      ]
     },
     "E": {
-        "info": "c er lysfarten \n = 3,00*10^8 m/s \n h er plancks konstant  \n = 6,63*10^-34 Js",
+        "info": "Måles i Joule \nc er lysfarten \n = 3,00*10^8 m/s \n h er plancks konstant  \n = 6,63*10^-34 Js",
         "formulas": [
                      {
                      "contains": [
@@ -341,7 +341,7 @@
                      ]
     },
     "R": {
-        "info": "",
+        "info": "Måles i Newton",
         "formulas": [
                      {
                      "contains": [
@@ -360,7 +360,7 @@
                      "contains": [
                                   "v"
                                   ],
-                     "note": "k er objektets friksjonskonstant"
+                     "note": "Generell formel for luftmotstand \nk er objektets friksjonskonstant"
                      }
                      ]
         },
@@ -440,9 +440,9 @@
                      },
                      {
                      "contains": [
-                                  "V"
+                                  ""
                                   ],
-                     "note": "SELF.lag en egen for volum. 'p' er massetetthet"
+                     "note": "p er massetetthet. V er volum"
                      }
                      ]
     },
