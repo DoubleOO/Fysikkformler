@@ -79,10 +79,6 @@
                            @"name":@"Friksjon",
                            @"filepre":@"R"},
                          
-                         @{@"symbol":@"I",
-                           @"name":@"Intensitet",
-                           @"filepre":@"I"},
-                         
                          @{@"symbol":@"Ek",
                            @"name":@"Kinetisk Energi",
                            @"filepre":@"Ek"},
@@ -139,7 +135,7 @@
                            @"name":@"Utstrålingstetthet",
                            @"filepre":@"U"},
                          
-                         @{@"symbol":@"Q,q",
+                         @{@"symbol":@"Q",
                            @"name":@"Varme",
                            @"filepre":@"Vm"},
                          
