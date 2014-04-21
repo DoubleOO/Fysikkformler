@@ -57,6 +57,7 @@
 		08FA78E018A2938400097C6E /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786B18A2938300097C6E /* UIImage+PDF.m */; };
 		08FA78E118A2938400097C6E /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FA786D18A2938300097C6E /* UIView+Image.m */; };
 		08FA792818A2938400097C6E /* atomcloud-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FA78C618A2938400097C6E /* atomcloud-grey.png */; };
+		FF2C494E190512CB00ECF147 /* s4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF2C494D190512CB00ECF147 /* s4.pdf */; };
 		FF3B6D1518FF22D100CE49DC /* a1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6C8C18FF22D100CE49DC /* a1.pdf */; };
 		FF3B6D1618FF22D100CE49DC /* a1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6C8D18FF22D100CE49DC /* a1Snudd.pdf */; };
 		FF3B6D1718FF22D100CE49DC /* a2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6C8E18FF22D100CE49DC /* a2.pdf */; };
@@ -128,7 +129,6 @@
 		FF3B6D6618FF22D100CE49DC /* s1Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CED18FF22D100CE49DC /* s1Snudd.pdf */; };
 		FF3B6D6718FF22D100CE49DC /* s2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CEE18FF22D100CE49DC /* s2.pdf */; };
 		FF3B6D6818FF22D100CE49DC /* s3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CEF18FF22D100CE49DC /* s3.pdf */; };
-		FF3B6D6918FF22D100CE49DC /* s4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CF018FF22D100CE49DC /* s4.pdf */; };
 		FF3B6D6A18FF22D100CE49DC /* s4Snudd.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CF118FF22D100CE49DC /* s4Snudd.pdf */; };
 		FF3B6D6B18FF22D100CE49DC /* Is1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CF318FF22D100CE49DC /* Is1.pdf */; };
 		FF3B6D6C18FF22D100CE49DC /* Is2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FF3B6CF418FF22D100CE49DC /* Is2.pdf */; };
@@ -263,6 +263,7 @@
 		08FA786C18A2938300097C6E /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		08FA786D18A2938300097C6E /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		08FA78C618A2938400097C6E /* atomcloud-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "atomcloud-grey.png"; sourceTree = "<group>"; };
+		FF2C494D190512CB00ECF147 /* s4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s4.pdf; sourceTree = "<group>"; };
 		FF3B6C8C18FF22D100CE49DC /* a1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1.pdf; sourceTree = "<group>"; };
 		FF3B6C8D18FF22D100CE49DC /* a1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a1Snudd.pdf; sourceTree = "<group>"; };
 		FF3B6C8E18FF22D100CE49DC /* a2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = a2.pdf; sourceTree = "<group>"; };
@@ -334,7 +335,6 @@
 		FF3B6CED18FF22D100CE49DC /* s1Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s1Snudd.pdf; sourceTree = "<group>"; };
 		FF3B6CEE18FF22D100CE49DC /* s2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s2.pdf; sourceTree = "<group>"; };
 		FF3B6CEF18FF22D100CE49DC /* s3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s3.pdf; sourceTree = "<group>"; };
-		FF3B6CF018FF22D100CE49DC /* s4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s4.pdf; sourceTree = "<group>"; };
 		FF3B6CF118FF22D100CE49DC /* s4Snudd.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = s4Snudd.pdf; sourceTree = "<group>"; };
 		FF3B6CF318FF22D100CE49DC /* Is1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Is1.pdf; sourceTree = "<group>"; };
 		FF3B6CF418FF22D100CE49DC /* Is2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Is2.pdf; sourceTree = "<group>"; };
@@ -834,7 +834,7 @@
 				FF3B6CED18FF22D100CE49DC /* s1Snudd.pdf */,
 				FF3B6CEE18FF22D100CE49DC /* s2.pdf */,
 				FF3B6CEF18FF22D100CE49DC /* s3.pdf */,
-				FF3B6CF018FF22D100CE49DC /* s4.pdf */,
+				FF2C494D190512CB00ECF147 /* s4.pdf */,
 				FF3B6CF118FF22D100CE49DC /* s4Snudd.pdf */,
 			);
 			path = Strekning;
@@ -1058,7 +1058,6 @@
 				FF3B6D3118FF22D100CE49DC /* E1.pdf in Resources */,
 				FF3B6D7A18FF22D100CE49DC /* t4.pdf in Resources */,
 				FF3B6D2818FF22D100CE49DC /* b2Snudd.pdf in Resources */,
-				FF3B6D6918FF22D100CE49DC /* s4.pdf in Resources */,
 				08FA78DC18A2938400097C6E /* LICENSE.txt in Resources */,
 				FF3B6D3018FF22D100CE49DC /* P6.pdf in Resources */,
 				FF3B6D2B18FF22D100CE49DC /* P1.pdf in Resources */,
@@ -1144,6 +1143,7 @@
 				08395E8818A9641400CDCDFC /* Icon-72.png in Resources */,
 				FF3B6D6F18FF22D100CE49DC /* Tm1.pdf in Resources */,
 				FF3B6D6018FF22D100CE49DC /* Re2.pdf in Resources */,
+				FF2C494E190512CB00ECF147 /* s4.pdf in Resources */,
 				FF3B6D6118FF22D100CE49DC /* Us1.pdf in Resources */,
 				FF3B6D2318FF22D100CE49DC /* W5.pdf in Resources */,
 				085FDF5018D7173900F3465A /* 568h@2x.png in Resources */,
