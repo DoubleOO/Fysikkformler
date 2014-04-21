@@ -1,6 +1,6 @@
 {
     "a": {
-        "info": "Benevningen er distanse/tid^2 \n Måles i m/s^2 ",
+        "info": "Måles i m/s^2 ",
         "formulas": [
                      {
                      "contains": [
@@ -478,7 +478,7 @@
                      "contains": [
                                   ""
                                   ],
-                     "note": "l = lengden, A = tverrsnittsarealet \n p er restistiviteten til materialet er "
+                     "note": "l = lengden, A = tverrsnittsarealet \n p er restistiviteten til materialet"
                      }
                      ]
     },
@@ -604,7 +604,7 @@
                      ]
     },
     "t": {
-        "info": "Måles som regel i sekunder",
+        "info": "Måles i sekunder",
         "formulas": [
                      {
                      "contains": [
